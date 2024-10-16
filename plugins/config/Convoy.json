@@ -1,0 +1,5225 @@
+{
+  "Version": "2.6.1",
+  "Prefix of chat messages": "[Convoy]",
+  "Main Setting": {
+    "Enable automatic event holding [true/false]": false,
+    "Minimum time between events [sec]": 3600,
+    "Maximum time between events [sec]": 3600,
+    "The time between receiving a chat notification and the start of the event [sec.]": 0,
+    "Enable logging of the start and end of the event? [true/false]": false,
+    "The event will not end if there are players nearby [true/false]": false,
+    "The turrets of the сonvoy will drop loot after destruction? [true/false]": false,
+    "Destroy the сonvoy after opening all the crates [true/false]": true,
+    "Time to destroy the сonvoy after opening all the crates [sec]": 300
+  },
+  "Behavior Settings": {
+    "The time for which the convoy becomes aggressive after it has been attacked (-1 - is always aggressive)": 80,
+    "The duration of the stop after the attack": 80
+  },
+  "Loot Settings": {
+    "When the car is destroyed, loot falls to the ground [true/false]": true,
+    "Percentage of loot loss when destroying a сar [0.0-1.0]": 0.5,
+    "Prohibit looting crates if the convoy is moving [true/false]": false,
+    "Prohibit looting crates if NPCs are alive [true/false]": false,
+    "Prohibit looting crates if Bradleys are alive [true/false]": false,
+    "Prohibit looting crates if Heli is alive [true/false]": false
+  },
+  "Route Settings": {
+    "Type of routes (0 - standard (fast generation), 1 - experimental (multiple roads are used), 2 - custom)": 1,
+    "Minimum road length": 200,
+    "List of excluded roads (/convoyroadblock)": [],
+    "Setting up the standard route type": {
+      "If there is a ring road on the map, then the convoy will always spawn here": true
+    },
+    "Setting up a experimental type": {
+      "Always choose the longest route? [true/false]": true,
+      "The minimum number of roads in a complex route": 3
+    },
+    "Setting up a custom route type": {
+      "List of presets for custom routes": []
+    }
+  },
+  "Convoy Presets": [
+    {
+      "Name": "easy",
+      "Name displayed on the map (For custom marker)": "Easy Convoy",
+      "Automatic startup": true,
+      "Probability of a preset [0.0-100.0]": 40.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 0,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": 259200,
+      "Event time": 3600,
+      "Radius of the event zone": 50.0,
+      "Maximum range for damage to Bradleys/NPCs/turrets (-1 - do not limit)": 50,
+      "Maximum range for damage to Heli when the convoy is stopped (-1 - do not limit)": 300,
+      "Order of vehicles": [
+        "motorbike_easy",
+        "motorbike_sidecar_easy",
+        "sedan_easy",
+        "motorbike_sidecar_easy",
+        "motorbike_easy"
+      ],
+      "Enable the helicopter": false,
+      "Heli preset": "",
+      "NPC damage multipliers depending on the attacker's weapon": {
+        "grenade.beancan.deployed": 0.5,
+        "grenade.f1.deployed": 0.5,
+        "explosive.satchel.deployed": 0.5,
+        "explosive.timed.deployed": 0.5,
+        "rocket_hv": 0.5,
+        "rocket_basic": 0.5,
+        "40mm_grenade_he": 0.5
+      }
+    },
+    {
+      "Name": "medium",
+      "Name displayed on the map (For custom marker)": "Medium Convoy",
+      "Automatic startup": true,
+      "Probability of a preset [0.0-100.0]": 30.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 86400,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Event time": 3600,
+      "Radius of the event zone": 60.0,
+      "Maximum range for damage to Bradleys/NPCs/turrets (-1 - do not limit)": 100,
+      "Maximum range for damage to Heli when the convoy is stopped (-1 - do not limit)": 300,
+      "Order of vehicles": [
+        "motorbike_sidecar_medium",
+        "sedan_medium",
+        "modular_npc_medium",
+        "bradley_medium",
+        "modular_npc_medium",
+        "sedan_medium",
+        "motorbike_sidecar_medium"
+      ],
+      "Enable the helicopter": false,
+      "Heli preset": "",
+      "NPC damage multipliers depending on the attacker's weapon": {
+        "grenade.beancan.deployed": 0.5,
+        "grenade.f1.deployed": 0.5,
+        "explosive.satchel.deployed": 0.5,
+        "explosive.timed.deployed": 0.5,
+        "rocket_hv": 0.5,
+        "rocket_basic": 0.5,
+        "40mm_grenade_he": 0.5
+      }
+    },
+    {
+      "Name": "hard",
+      "Name displayed on the map (For custom marker)": "Hard Convoy",
+      "Automatic startup": true,
+      "Probability of a preset [0.0-100.0]": 20.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 259200,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Event time": 3600,
+      "Radius of the event zone": 70.0,
+      "Maximum range for damage to Bradleys/NPCs/turrets (-1 - do not limit)": 100,
+      "Maximum range for damage to Heli when the convoy is stopped (-1 - do not limit)": 300,
+      "Order of vehicles": [
+        "sedan_hard",
+        "modular_npc_long_hard",
+        "modular_sniper_hard",
+        "bradley_hard",
+        "vendor_loot_hard",
+        "vendor_samsite_hard",
+        "bradley_hard",
+        "modular_sniper_hard",
+        "modular_npc_long_hard",
+        "sedan_hard"
+      ],
+      "Enable the helicopter": true,
+      "Heli preset": "heli_hard",
+      "NPC damage multipliers depending on the attacker's weapon": {
+        "grenade.beancan.deployed": 0.5,
+        "grenade.f1.deployed": 0.5,
+        "explosive.satchel.deployed": 0.5,
+        "explosive.timed.deployed": 0.5,
+        "rocket_hv": 0.5,
+        "rocket_basic": 0.5,
+        "40mm_grenade_he": 0.5
+      }
+    },
+    {
+      "Name": "nightmare",
+      "Name displayed on the map (For custom marker)": "Nightmarish Convoy",
+      "Automatic startup": false,
+      "Probability of a preset [0.0-100.0]": 10.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 259200,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Event time": 3600,
+      "Radius of the event zone": 100.0,
+      "Maximum range for damage to Bradleys/NPCs/turrets (-1 - do not limit)": 120,
+      "Maximum range for damage to Heli when the convoy is stopped (-1 - do not limit)": 300,
+      "Order of vehicles": [
+        "bradley_samsite_nightmare",
+        "modular_npc_long_nightmare",
+        "vendor_turret_nightmare",
+        "vendor_samsite_nightmare",
+        "bradley_samsite_nightmare",
+        "sedan_nightmare",
+        "sedan_nightmare",
+        "bradley_samsite_nightmare",
+        "vendor_samsite_nightmare",
+        "vendor_turret_nightmare",
+        "modular_npc_long_nightmare",
+        "bradley_samsite_nightmare"
+      ],
+      "Enable the helicopter": true,
+      "Heli preset": "heli_nightmare",
+      "NPC damage multipliers depending on the attacker's weapon": {
+        "grenade.beancan.deployed": 0.1,
+        "grenade.f1.deployed": 0.1,
+        "explosive.satchel.deployed": 0.1,
+        "explosive.timed.deployed": 0.1,
+        "rocket_hv": 0.1,
+        "rocket_basic": 0.1,
+        "40mm_grenade_he": 0.1
+      }
+    }
+  ],
+  "Travelling Vendor Configurations": [
+    {
+      "Preset Name": "vendor_loot_hard",
+      "Delete the vendor's map marker?": false,
+      "Add a lock on the Loot Door? [true/false]": true,
+      "Loot Door Health": 250.0,
+      "NPC preset": "",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_minigun_hard",
+          "Position": "(0, 0.85, -1.25)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "frige_safe_hard",
+          "Position": "(0, 0, -1.85)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Turrets": [
+        {
+          "Preset name": "turret_minigun_hard",
+          "Position": "(0, 1.78, 0.818)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "turret_minigun_hard",
+          "Position": "(0, 1.78, -1.707)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "SamSites": []
+    },
+    {
+      "Preset Name": "vendor_samsite_hard",
+      "Delete the vendor's map marker?": false,
+      "Add a lock on the Loot Door? [true/false]": true,
+      "Loot Door Health": 250.0,
+      "NPC preset": "",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_flamethrower_hard",
+          "Position": "(0, 0.85, -1.25)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "frige_safe_hard",
+          "Position": "(0, 0, -1.85)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Turrets": [
+        {
+          "Preset name": "turret_minigun_hard",
+          "Position": "(0, 1.78, 0.818)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "SamSites": [
+        {
+          "Preset name": "samsite_default",
+          "Position": "(0, 1, -1)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "Preset Name": "vendor_turret_nightmare",
+      "Delete the vendor's map marker?": false,
+      "Add a lock on the Loot Door? [true/false]": true,
+      "Loot Door Health": 250.0,
+      "NPC preset": "",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_minigun_hard",
+          "Position": "(0, 0.85, -1.25)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "frige_safe_nightmare",
+          "Position": "(0, 0, -1.85)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Turrets": [
+        {
+          "Preset name": "turret_minigun_nightmare",
+          "Position": "(0, 1.78, 0.818)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "turret_minigun_nightmare",
+          "Position": "(0, 1.78, -1.707)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "SamSites": []
+    },
+    {
+      "Preset Name": "vendor_samsite_nightmare",
+      "Delete the vendor's map marker?": false,
+      "Add a lock on the Loot Door? [true/false]": false,
+      "Loot Door Health": 250.0,
+      "NPC preset": "",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_flamethrower_hard",
+          "Position": "(0.5, 0.85, -1.25)",
+          "Rotation": "(0, 180, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_smoke_nightmare",
+          "Position": "(-0.5, 0.85, -1.25)",
+          "Rotation": "(-1, 180, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "frige_safe_nightmare",
+          "Position": "(0, 0, -1.85)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Turrets": [
+        {
+          "Preset name": "turret_minigun_nightmare",
+          "Position": "(0, 1.78, 0.818)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "SamSites": [
+        {
+          "Preset name": "samsite_default",
+          "Position": "(0, 1, -1)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ]
+    }
+  ],
+  "Modular Configurations": [
+    {
+      "Name": "modular_npc_medium",
+      "Scale damage": 1.0,
+      "Modules": [
+        "vehicle.1mod.engine",
+        "vehicle.1mod.cockpit.with.engine",
+        "vehicle.1mod.storage"
+      ],
+      "NPC preset": "carnpc_lr300_raid_medium",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_lr300_medium",
+          "Position": "(-0.9, 0.85, -1.5)",
+          "Rotation": "(0, 270, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_lr300_medium",
+          "Position": "(0.9, 0.85, -1.5)",
+          "Rotation": "(0, 90, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "crate_invisible_normal_medium",
+          "Position": "(0, 1.5, -1.5)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "modular_sniper_hard",
+      "Scale damage": 1.0,
+      "Modules": [
+        "vehicle.1mod.flatbed",
+        "vehicle.1mod.cockpit.with.engine",
+        "vehicle.1mod.storage"
+      ],
+      "NPC preset": "carnpc_grenadelauncher_hard",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_bolt_hard",
+          "Position": "(-0.9, 0.85, -1.5)",
+          "Rotation": "(0, 270, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_bolt_hard",
+          "Position": "(0.9, 0.85, -1.5)",
+          "Rotation": "(0, 90, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/testseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": false,
+          "NPC preset (Empty - as in a vehicle)": "carnpc_bolt_hard",
+          "Position": "(0, 0.8, 1.5)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "crate_invisible_normal_hard",
+          "Position": "(0, 1.5, -1.5)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "modular_npc_long_hard",
+      "Scale damage": 1.0,
+      "Modules": [
+        "vehicle.1mod.cockpit.with.engine",
+        "vehicle.2mod.passengers",
+        "vehicle.1mod.rear.seats"
+      ],
+      "NPC preset": "carnpc_lr300_raid_hard",
+      "Number of NPCs": 10,
+      "Locations of additional NPCs": [],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "modular_npc_long_nightmare",
+      "Scale damage": 1.0,
+      "Modules": [
+        "vehicle.1mod.cockpit.with.engine",
+        "vehicle.1mod.rear.seats",
+        "vehicle.1mod.rear.seats",
+        "vehicle.1mod.rear.seats"
+      ],
+      "NPC preset": "carnpc_ak_raid_nightmare",
+      "Number of NPCs": 8,
+      "Locations of additional NPCs": [],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "modular_fuel_nightmare",
+      "Scale damage": 1.0,
+      "Modules": [
+        "vehicle.1mod.cockpit.with.engine",
+        "vehicle.1mod.rear.seats",
+        "vehicle.2mod.fuel.tank"
+      ],
+      "NPC preset": "carnpc_ak_raid_nightmare_3",
+      "Number of NPCs": 4,
+      "Locations of additional NPCs": [],
+      "Crates": [
+        {
+          "Preset name": "crate_invisible_normal_hard",
+          "Position": "(0, 0.5, -1.5)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    }
+  ],
+  "Bradley Configurations": [
+    {
+      "Name": "bradley_medium",
+      "HP": 600.0,
+      "Damage multiplier from Bradley to buildings (-1 - do not change)": -1.0,
+      "The viewing distance": 100.0,
+      "Radius of search": 100.0,
+      "The multiplier of Machine-gun aim cone": 1.5,
+      "The multiplier of Machine-gun fire rate": 0.7,
+      "Amount of Machine-gun burst shots": 5,
+      "The time between shots of the main gun [sec.]": 15.0,
+      "The time between shots of the main gun in a fire rate [sec.]": 0.25,
+      "Numbers of crates": 3,
+      "Open the crates immediately after spawn": true,
+      "Own loot table": {
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "List of items": [
+          {
+            "ShortName": "ammo.rocket.fire",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.hv",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.seeker",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.mlrs",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      },
+      "NPC preset": "biker_grenadelauncher_medium",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(-0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "bradley_hard",
+      "HP": 600.0,
+      "Damage multiplier from Bradley to buildings (-1 - do not change)": -1.0,
+      "The viewing distance": 100.0,
+      "Radius of search": 100.0,
+      "The multiplier of Machine-gun aim cone": 1.5,
+      "The multiplier of Machine-gun fire rate": 0.7,
+      "Amount of Machine-gun burst shots": 5,
+      "The time between shots of the main gun [sec.]": 15.0,
+      "The time between shots of the main gun in a fire rate [sec.]": 0.25,
+      "Numbers of crates": 3,
+      "Open the crates immediately after spawn": true,
+      "Own loot table": {
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "ammo.rocket.fire",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.hv",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.mlrs",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 40,
+            "Maximum": 60,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      },
+      "NPC preset": "carnpc_grenadelauncher_hard",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(-0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        }
+      ],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "bradley_samsite_nightmare",
+      "HP": 1000.0,
+      "Damage multiplier from Bradley to buildings (-1 - do not change)": -1.0,
+      "The viewing distance": 100.0,
+      "Radius of search": 100.0,
+      "The multiplier of Machine-gun aim cone": 1.1,
+      "The multiplier of Machine-gun fire rate": 1.0,
+      "Amount of Machine-gun burst shots": 10,
+      "The time between shots of the main gun [sec.]": 10.0,
+      "The time between shots of the main gun in a fire rate [sec.]": 0.25,
+      "Numbers of crates": 3,
+      "Open the crates immediately after spawn": true,
+      "Own loot table": {
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "ammo.rocket.fire",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.hv",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.mlrs",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 40,
+            "Maximum": 60,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      },
+      "NPC preset": "carnpc_ak_raid_nightmare_2",
+      "Number of NPCs": 0,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(-0.624, 1.4, -3)",
+          "Rotation": "(0, 180, 0)"
+        },
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/bikepassengerseat.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "",
+          "Position": "(1.75, 1.234, 1.4)",
+          "Rotation": "(0, 90, 0)"
+        }
+      ],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": [
+        {
+          "Preset name": "samsite_default",
+          "Position": "(0.238, 1.5, -0.29)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ]
+    }
+  ],
+  "Sedan Configurations": [
+    {
+      "Name": "sedan_easy",
+      "HP": 500.0,
+      "NPC preset": "sedan_npc_easy",
+      "Number of NPCs": 1,
+      "Locations of additional NPCs": [],
+      "Crates": [
+        {
+          "Preset name": "crate_normal_weapon_easy",
+          "Position": "(0, 1.734, 0.55)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_normal_weapon_easy",
+          "Position": "(0, 1.734, -0.35)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_normal_explosive_easy",
+          "Position": "(0, 1.229, -1.780)",
+          "Rotation": "(355.691, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(-0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "sedan_medium",
+      "HP": 500.0,
+      "NPC preset": "carnpc_shotgunm4_medium",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [],
+      "Crates": [
+        {
+          "Preset name": "crate_elite_explosive_medium",
+          "Position": "(0, 1.734, 0.55)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_elite_weapon_medium",
+          "Position": "(0, 1.734, -0.35)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_normal_explosive_medium",
+          "Position": "(0, 1.229, -1.780)",
+          "Rotation": "(355.691, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(-0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "sedan_hard",
+      "HP": 500.0,
+      "NPC preset": "carnpc_lr300_hard",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [],
+      "Crates": [
+        {
+          "Preset name": "crate_elite_explosive_hard",
+          "Position": "(0, 1.734, 0.55)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_elite_weapon_hard",
+          "Position": "(0, 1.734, -0.35)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_normal_explosive_hard",
+          "Position": "(0, 1.229, -1.780)",
+          "Rotation": "(355.691, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(-0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Name": "sedan_nightmare",
+      "HP": 500.0,
+      "NPC preset": "carnpc_ak_raid_nightmare_3",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [],
+      "Crates": [
+        {
+          "Preset name": "crate_elite_explosive_hard",
+          "Position": "(0, 1.734, 0.55)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_elite_weapon_hard",
+          "Position": "(0, 1.734, -0.35)",
+          "Rotation": "(0, 0, 0)"
+        },
+        {
+          "Preset name": "crate_normal_explosive_hard",
+          "Position": "(0, 1.229, -1.780)",
+          "Rotation": "(355.691, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        },
+        {
+          "Preset name": "crate_invisible_fuel_easy",
+          "Position": "(-0.833, 1.09, -2.019)",
+          "Rotation": "(85.057, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    }
+  ],
+  "Bike Configurations": [
+    {
+      "Preset Name": "motorbike_easy",
+      "Prefab Name": "assets/content/vehicles/bikes/motorbike.prefab",
+      "HP": 300.0,
+      "NPC preset": "biker_m92_easy_2",
+      "Number of NPCs": 1,
+      "Locations of additional NPCs": [],
+      "Crates": [],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Preset Name": "motorbike_sidecar_easy",
+      "Prefab Name": "assets/content/vehicles/bikes/motorbike_sidecar.prefab",
+      "HP": 350.0,
+      "NPC preset": "biker_m92_easy_1",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "biker_spas12_easy",
+          "Position": "(0, 0.45, -0.45)",
+          "Rotation": "(15, 0, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "crate_basic_techparts_easy",
+          "Position": "(0.715, 0.354, -0.712)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    },
+    {
+      "Preset Name": "motorbike_sidecar_medium",
+      "Prefab Name": "assets/content/vehicles/bikes/motorbike_sidecar.prefab",
+      "HP": 350.0,
+      "NPC preset": "biker_mp5_medium",
+      "Number of NPCs": 2,
+      "Locations of additional NPCs": [
+        {
+          "Enable spawn?": true,
+          "Seat prefab": "assets/prefabs/vehicle/seats/attackheligunner.prefab",
+          "Will the NPC dismount when the vehicle stops?": true,
+          "NPC preset (Empty - as in a vehicle)": "biker_grenadelauncher_medium",
+          "Position": "(0, 0.45, -0.45)",
+          "Rotation": "(15, 0, 0)"
+        }
+      ],
+      "Crates": [
+        {
+          "Preset name": "crate_basic_resources_medium",
+          "Position": "(0.715, 0.354, -0.712)",
+          "Rotation": "(0, 0, 0)"
+        }
+      ],
+      "Turrets": [],
+      "SamSites": []
+    }
+  ],
+  "Heli Configurations": [
+    {
+      "Name": "heli_hard",
+      "HP": 10000.0,
+      "HP of the main rotor": 750.0,
+      "HP of tail rotor": 375.0,
+      "Numbers of crates": 3,
+      "Flying height": 50.0,
+      "Bullet speed": 250.0,
+      "Bullet Damage": 20.0,
+      "The distance to which the helicopter can move away from the convoy": 350.0,
+      "The time for which the helicopter can leave the convoy to attack the target [sec.]": 30.0,
+      "The helicopter will not aim for the nearest monument at death [true/false]": true,
+      "Open the crates immediately after spawn": true,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Name": "heli_nightmare",
+      "HP": 20000.0,
+      "HP of the main rotor": 1500.0,
+      "HP of tail rotor": 750.0,
+      "Numbers of crates": 3,
+      "Flying height": 50.0,
+      "Bullet speed": 250.0,
+      "Bullet Damage": 20.0,
+      "The distance to which the helicopter can move away from the convoy": 350.0,
+      "The time for which the helicopter can leave the convoy to attack the target [sec.]": 30.0,
+      "The helicopter will not aim for the nearest monument at death [true/false]": true,
+      "Open the crates immediately after spawn": true,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "Turret Configurations": [
+    {
+      "Preset Name": "turret_minigun_hard",
+      "Health": 500.0,
+      "Weapon ShortName": "minigun",
+      "Ammo ShortName": "ammo.rifle",
+      "Number of ammo": 500,
+      "Target detection range (0 - do not change)": 100.0,
+      "Target loss range (0 - do not change)": 0.0
+    },
+    {
+      "Preset Name": "turret_minigun_nightmare",
+      "Health": 500.0,
+      "Weapon ShortName": "minigun",
+      "Ammo ShortName": "ammo.rifle",
+      "Number of ammo": 800,
+      "Target detection range (0 - do not change)": 130.0,
+      "Target loss range (0 - do not change)": 0.0
+    }
+  ],
+  "SamSite Configurations": [
+    {
+      "Preset Name": "samsite_default",
+      "Health": 1000.0,
+      "Number of ammo": 100
+    }
+  ],
+  "Crate presets": [
+    {
+      "Preset Name": "crate_normal_weapon_easy",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "smg.thompson",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.2",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "pistol.m92",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "shotgun.spas12",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_normal_explosive_easy",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "grenade.beancan",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "explosive.satchel",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.molotov",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.f1",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.holosight",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.silencer",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.extendedmags",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_basic_techparts_easy",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_basic.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_invisible_fuel_easy",
+      "Prefab": "assets/bundled/prefabs/modding/lootables/invisible/invisible_lootable_prefabs/invisible_crate_basic.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/loot_barrel_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "crude.oil",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "lowgradefuel",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_basic_resources_medium",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_basic.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 9,
+        "Maximum numbers of items": 9,
+        "List of items": [
+          {
+            "ShortName": "cloth",
+            "Minimum": 200,
+            "Maximum": 300,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "leather",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "charcoal",
+            "Minimum": 2000,
+            "Maximum": 4000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "gunpowder",
+            "Minimum": 250,
+            "Maximum": 750,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "sulfur",
+            "Minimum": 750,
+            "Maximum": 1250,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.refined",
+            "Minimum": 75,
+            "Maximum": 125,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.fragments",
+            "Minimum": 1500,
+            "Maximum": 3000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 300,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "diesel_barrel",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_normal_explosive_medium",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "grenade.molotov",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.f1",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.flashbang",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.holosight",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.silencer",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.extendedmags",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_elite_weapon_medium",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "smg.thompson",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.2",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.mp5",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 20.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 20.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "hmlmg",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 20.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_elite_explosive_medium",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "List of items": [
+          {
+            "ShortName": "ammo.rocket.fire",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.hv",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.seeker",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.mlrs",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_invisible_normal_medium",
+      "Prefab": "assets/bundled/prefabs/modding/lootables/invisible/invisible_lootable_prefabs/invisible_crate_normal.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/loot_barrel_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 6,
+        "Maximum numbers of items": 6,
+        "List of items": [
+          {
+            "ShortName": "roadsign.kilt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.facemask",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 64,
+            "Maximum": 128,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.thompson",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.2",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.mp5",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "hmlmg",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_invisible_normal_hard",
+      "Prefab": "assets/bundled/prefabs/modding/lootables/invisible/invisible_lootable_prefabs/invisible_crate_normal_2.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/loot_barrel_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 9,
+        "Maximum numbers of items": 9,
+        "List of items": [
+          {
+            "ShortName": "roadsign.kilt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.facemask",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 10,
+            "Maximum": 20,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "largemedkit",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "black.raspberries",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.mp5",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "lmg.m249",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.l96",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_elite_explosive_hard",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "ammo.rocket.fire",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.hv",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.mlrs",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 40,
+            "Maximum": 60,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 2,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_elite_weapon_hard",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/loot_barrel_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "List of items": [
+          {
+            "ShortName": "smg.mp5",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 15.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 15.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 15.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 15.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "lmg.m249",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.l96",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_normal_explosive_hard",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "grenade.molotov",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.f1",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "grenade.flashbang",
+            "Minimum": 3,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.holosight",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.silencer",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "weapon.mod.extendedmags",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "frige_safe_hard",
+      "Prefab": "assets/prefabs/deployable/fridge/fridge.deployed.prefab",
+      "SkinID (0 - default)": 3005880420,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 5,
+              "Maximum Loot multiplier": 5
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 9,
+        "Maximum numbers of items": 9,
+        "List of items": [
+          {
+            "ShortName": "cloth",
+            "Minimum": 1000,
+            "Maximum": 1500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "leather",
+            "Minimum": 500,
+            "Maximum": 1000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "charcoal",
+            "Minimum": 10000,
+            "Maximum": 20000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "gunpowder",
+            "Minimum": 2000,
+            "Maximum": 3500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "sulfur",
+            "Minimum": 2500,
+            "Maximum": 5000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.refined",
+            "Minimum": 350,
+            "Maximum": 500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.fragments",
+            "Minimum": 7500,
+            "Maximum": 15000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 500,
+            "Maximum": 1500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "diesel_barrel",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crate_invisible_normal_nightmare",
+      "Prefab": "assets/bundled/prefabs/modding/lootables/invisible/invisible_lootable_prefabs/invisible_crate_normal_2.prefab",
+      "SkinID (0 - default)": 0,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/loot_barrel_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 9,
+        "Maximum numbers of items": 9,
+        "List of items": [
+          {
+            "ShortName": "roadsign.kilt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.facemask",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 10,
+            "Maximum": 20,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "largemedkit",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "black.raspberries",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.mp5",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "lmg.m249",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.l96",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "frige_safe_nightmare",
+      "Prefab": "assets/prefabs/deployable/fridge/fridge.deployed.prefab",
+      "SkinID (0 - default)": 3005880420,
+      "Time to unlock the crates (LockedCrate) [sec.]": -1.0,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 5,
+              "Maximum Loot multiplier": 5
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 9,
+        "Maximum numbers of items": 9,
+        "List of items": [
+          {
+            "ShortName": "cloth",
+            "Minimum": 1500,
+            "Maximum": 2500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "leather",
+            "Minimum": 750,
+            "Maximum": 1500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "charcoal",
+            "Minimum": 15000,
+            "Maximum": 25000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "gunpowder",
+            "Minimum": 2500,
+            "Maximum": 4000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "sulfur",
+            "Minimum": 3000,
+            "Maximum": 6000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.refined",
+            "Minimum": 350,
+            "Maximum": 500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.fragments",
+            "Minimum": 10000,
+            "Maximum": 17500,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 1000,
+            "Maximum": 2000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "diesel_barrel",
+            "Minimum": 10,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "NPC Configurations": [
+    {
+      "Preset Name": "biker_m92_easy_1",
+      "Name": "Forest Bandit",
+      "Health": 100.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "mask.bandana",
+          "skinID (0 - default)": 3255213783
+        },
+        {
+          "ShortName": "hat.boonie",
+          "skinID (0 - default)": 2557702256
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 1282142258
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2080977144
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "pistol.m92",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight"
+          ],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 60.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.4,
+      "Aim Cone Scale": 1.5,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 2,
+              "Maximum Loot multiplier": 2
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "bandage",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 30.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 20.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "largemedkit",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "biker_m92_easy_2",
+      "Name": "Road Bandit",
+      "Health": 100.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "coffeecan.helmet",
+          "skinID (0 - default)": 2803024592
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2811533300
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2811533832
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 2816776847
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "pistol.m92",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight"
+          ],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 60.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.4,
+      "Aim Cone Scale": 1.5,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 2,
+              "Maximum Loot multiplier": 2
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "bandage",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 30.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 20.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "largemedkit",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 10.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "biker_spas12_easy",
+      "Name": "Hunter",
+      "Health": 125.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 961066582
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 961084105
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 961096730
+        },
+        {
+          "ShortName": "burlap.gloves",
+          "skinID (0 - default)": 961103399
+        },
+        {
+          "ShortName": "hat.beenie",
+          "skinID (0 - default)": 594202145
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "shotgun.spas12",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight"
+          ],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 60.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.8,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "ammo.pistol.fire",
+            "Minimum": 60,
+            "Maximum": 80,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol",
+            "Minimum": 60,
+            "Maximum": 80,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.fire",
+            "Minimum": 15,
+            "Maximum": 30,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun",
+            "Minimum": 15,
+            "Maximum": 30,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.slug",
+            "Minimum": 15,
+            "Maximum": 30,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 60,
+            "Maximum": 80,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "sedan_npc_easy",
+      "Name": "Armored Bandit",
+      "Health": 150.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "coffeecan.helmet",
+          "skinID (0 - default)": 3312398531
+        },
+        {
+          "ShortName": "roadsign.jacket",
+          "skinID (0 - default)": 3312406908
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 3312413579
+        },
+        {
+          "ShortName": "roadsign.gloves",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 1582399729
+        },
+        {
+          "ShortName": "tshirt",
+          "skinID (0 - default)": 1582403431
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "smg.thompson",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight"
+          ],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 60.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.4,
+      "Aim Cone Scale": 1.3,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "smg.thompson",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "smg.2",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "pistol.m92",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "shotgun.spas12",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rifle.ak",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 1.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 1.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 1.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 1.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "biker_grenadelauncher_medium",
+      "Name": "Bomber Man",
+      "Health": 200.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "coffeecan.helmet",
+          "skinID (0 - default)": 2350097716
+        },
+        {
+          "ShortName": "jacket",
+          "skinID (0 - default)": 2395820290
+        },
+        {
+          "ShortName": "tshirt",
+          "skinID (0 - default)": 856391177
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2080977144
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "multiplegrenadelauncher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.2,
+      "Aim Cone Scale": 1.5,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "biker_mp5_medium",
+      "Name": "Armored Road Bandit",
+      "Health": 125.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "coffeecan.helmet",
+          "skinID (0 - default)": 1269589560
+        },
+        {
+          "ShortName": "roadsign.jacket",
+          "skinID (0 - default)": 1706089885
+        },
+        {
+          "ShortName": "roadsign.gloves",
+          "skinID (0 - default)": 2806216923
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2811533300
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2080977144
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "smg.mp5",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 1.4,
+      "Aim Cone Scale": 0.8,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_shotgunm4_medium",
+      "Name": "Madman",
+      "Health": 170.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "coffeecan.helmet",
+          "skinID (0 - default)": 1624104393
+        },
+        {
+          "ShortName": "roadsign.jacket",
+          "skinID (0 - default)": 1624100124
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 1624102935
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2099705103
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2099701364
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "shotgun.m4",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight"
+          ],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 1.5,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_lr300_medium",
+      "Name": "Radiation Liquidator",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "hat.gas.mask",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 1740068457
+        },
+        {
+          "ShortName": "roadsign.jacket",
+          "skinID (0 - default)": 1740065674
+        },
+        {
+          "ShortName": "roadsign.gloves",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2649552973
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2649555568
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "diving.tank",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.lr300",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_lr300_raid_medium",
+      "Name": "Raider",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "clatter.helmet",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "attire.hide.poncho",
+          "skinID (0 - default)": 2819301476
+        },
+        {
+          "ShortName": "roadsign.gloves",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2984978438
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2080977144
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.lr300",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "rocket.launcher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_lr300_hard",
+      "Name": "Defender",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 3274815691
+        },
+        {
+          "ShortName": "metal.plate.torso",
+          "skinID (0 - default)": 3274816373
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 3299983586
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 3322149888
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 3322151159
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 819211835
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.lr300",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_lr300_raid_hard",
+      "Name": "Armored Raider",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 1644415525
+        },
+        {
+          "ShortName": "metal.plate.torso",
+          "skinID (0 - default)": 1644419309
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2282815003
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2282817402
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 919261524
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.lr300",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "rocket.launcher.dragon",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_grenadelauncher_hard",
+      "Name": "Armored Bomber Man",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 2810942233
+        },
+        {
+          "ShortName": "jacket",
+          "skinID (0 - default)": 2843424058
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 2823738497
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2814837980
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2814838951
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 919261524
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "multiplegrenadelauncher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.5,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_bolt_hard",
+      "Name": "Sniper",
+      "Health": 175.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "gloweyes",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 2226597543
+        },
+        {
+          "ShortName": "metal.plate.torso",
+          "skinID (0 - default)": 2226598382
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2282815003
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2282817402
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 919261524
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.bolt",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.lasersight",
+            "weapon.mod.8x.scope"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_flamethrower_hard",
+      "Name": "Fire Boss",
+      "Health": 1500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "scientistsuit_heavy",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "military flamethrower",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 3.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 6,
+        "Maximum numbers of items": 6,
+        "List of items": [
+          {
+            "ShortName": "ammo.shotgun",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.fire",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.slug",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol.fire",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol.hv",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.incendiary",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.hv",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.buckshot",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.smoke",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_minigun_hard",
+      "Name": "Boss",
+      "Health": 1500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "scientistsuit_heavy",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "minigun",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 3.5,
+      "Roam Range": 10.0,
+      "Chase Range": 110.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 110.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 0.7,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_ak_raid_nightmare",
+      "Name": "Armored Raider",
+      "Health": 500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 3274815691
+        },
+        {
+          "ShortName": "metal.plate.torso",
+          "skinID (0 - default)": 3274816373
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 3299983586
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 3318206106
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 3318207180
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 819211835
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.ak",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "rocket.launcher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 7.5,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_ak_raid_nightmare_2",
+      "Name": "Armored Raider",
+      "Health": 500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 2810942233
+        },
+        {
+          "ShortName": "jacket",
+          "skinID (0 - default)": 2843424058
+        },
+        {
+          "ShortName": "roadsign.kilt",
+          "skinID (0 - default)": 2823738497
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 2814837980
+        },
+        {
+          "ShortName": "hoodie",
+          "skinID (0 - default)": 2814838951
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 919261524
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.ak",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "rocket.launcher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.5,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_ak_raid_nightmare_3",
+      "Name": "Armored Raider",
+      "Health": 500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "burlap.shirt",
+          "skinID (0 - default)": 636287439
+        },
+        {
+          "ShortName": "metal.facemask",
+          "skinID (0 - default)": 2703876402
+        },
+        {
+          "ShortName": "tactical.gloves",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "metal.plate.torso",
+          "skinID (0 - default)": 891976364
+        },
+        {
+          "ShortName": "pants",
+          "skinID (0 - default)": 636287180
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 636286960
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.ak",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "rocket.launcher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "grenade.f1",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 3.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.4,
+      "Aim Cone Scale": 1.3,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_smoke_nightmare",
+      "Name": "Smoker",
+      "Health": 500.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "heavy.plate.helmet",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "heavy.plate.jacket",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "heavy.plate.pants",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "tactical.gloves",
+          "skinID (0 - default)": 0
+        },
+        {
+          "ShortName": "shoes.boots",
+          "skinID (0 - default)": 636286960
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "multiplegrenadelauncher",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": "40mm_grenade_smoke"
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "grenade.f1",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 5.0,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 3.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.4,
+      "Aim Cone Scale": 1.3,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_flamethrower_nightmare",
+      "Name": "Fire Boss",
+      "Health": 3000.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "scientistsuit_heavy",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "military flamethrower",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 3.5,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 6,
+        "Maximum numbers of items": 6,
+        "List of items": [
+          {
+            "ShortName": "ammo.shotgun",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.fire",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.shotgun.slug",
+            "Minimum": 20,
+            "Maximum": 40,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol.fire",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.pistol.hv",
+            "Minimum": 120,
+            "Maximum": 160,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.incendiary",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.rifle.hv",
+            "Minimum": 128,
+            "Maximum": 256,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.buckshot",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.smoke",
+            "Minimum": 5,
+            "Maximum": 15,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "carnpc_minigun_nightmare",
+      "Name": "Boss",
+      "Health": 3000.0,
+      "Kit": "",
+      "Wear items": [
+        {
+          "ShortName": "scientistsuit_heavy",
+          "skinID (0 - default)": 0
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "minigun",
+          "Amount": 1,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skinID (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Speed": 3.5,
+      "Roam Range": 10.0,
+      "Chase Range": 130.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 130.0,
+      "Memory duration [sec.]": 10.0,
+      "Scale damage": 0.65,
+      "Aim Cone Scale": 0.7,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Turret damage scale": 1.0,
+      "Disable radio effects? [true/false]": false,
+      "Should remove the corpse?": true,
+      "Own loot table": {
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Allow the Loot Table Stacksize GUI plugin to spawn items in this crate": false,
+        "Clear the standard content of the crate": true,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": true,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+              "Minimum Loot multiplier": 3,
+              "Maximum Loot multiplier": 3
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 50,
+            "Maximum": 100,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "Marker Setting": {
+    "Do you use the Marker? [true/false]": true,
+    "Use a shop marker? [true/false]": true,
+    "Use a circular marker? [true/false]": true,
+    "Radius": 0.2,
+    "Alpha": 0.6,
+    "Marker color": {
+      "r": 0.81,
+      "g": 0.25,
+      "b": 0.15
+    },
+    "Outline color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    }
+  },
+  "Event zone": {
+    "Create a PVP zone in the convoy stop zone? (only for those who use the TruePVE plugin)[true/false]": false,
+    "Use the dome? [true/false]": false,
+    "Darkening the dome": 5,
+    "Use a colored border? [true/false]": false,
+    "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+    "Brightness of the color border": 5
+  },
+  "Notification Settings": {
+    "Use a chat? [true/false]": true,
+    "The time until the end of the event, when a message is displayed about the time until the end of the event [sec]": [
+      300,
+      60,
+      30,
+      5
+    ],
+    "Facepunch Game Tips setting": {
+      "Use Facepunch Game Tips (notification bar above hotbar)? [true/false]": false,
+      "Style (0 - Blue Normal, 1 - Red Normal, 2 - Blue Long, 3 - Blue Short, 4 - Server Event)": 2
+    }
+  },
+  "GUI": {
+    "Use the Countdown GUI? [true/false]": true,
+    "Vertical offset": -56
+  },
+  "Supported Plugins": {
+    "PVE Mode Setting": {
+      "Use the PVE mode of the plugin? [true/false]": false,
+      "The owner will immediately be the one who stopped the convoy": false,
+      "If a player has a cooldown and the event has NO OWNERS, then he will not be able to interact with the event? [true/false]": false,
+      "If a player has a cooldown, and the event HAS AN OWNER, then he will not be able to interact with the event, even if he is on a team with the owner? [true/false]": false,
+      "Allow only the owner or his teammates to loot crates? [true/false]": false,
+      "Display the name of the event owner on a marker on the map? [true/false]": true,
+      "The amount of damage that the player has to do to become the Event Owner": 500.0,
+      "Damage coefficients for calculate to become the Event Owner.": {
+        "Npc": 1.0,
+        "Bradley": 2.0,
+        "Helicopter": 2.0,
+        "Turret": 1.0
+      },
+      "Can the non-owner of the event loot the crates? [true/false]": false,
+      "Can the non-owner of the event hack locked crates? [true/false]": false,
+      "Can the non-owner of the event loot NPC corpses? [true/false]": false,
+      "Can an Npc attack a non-owner of the event? [true/false]": false,
+      "Can Bradley attack a non-owner of the event? [true/false]": false,
+      "Can Turret attack a non-owner of the event? [true/false]": false,
+      "Can Helicopter attack a non-owner of the event? [true/false]": false,
+      "Can the non-owner of the event do damage to Bradley? [true/false]": false,
+      "Can the non-owner of the event deal damage to the NPC? [true/false]": false,
+      "Can the non-owner of the event do damage to Helicopter? [true/false]": false,
+      "Can the non-owner of the event do damage to Turret? [true/false]": false,
+      "Allow the non-owner of the event to enter the event zone? [true/false]": false,
+      "Allow a player who has an active cooldown of the Event Owner to enter the event zone? [true/false]": true,
+      "The time that the Event Owner may not be inside the event zone [sec.]": 300,
+      "The time until the end of Event Owner status when it is necessary to warn the player [sec.]": 60,
+      "Prevent the actions of the RestoreUponDeath plugin in the event zone? [true/false]": true,
+      "The time that the player can`t become the Event Owner, after the end of the event and the player was its owner [sec.]": 86400.0
+    },
+    "Economy Setting": {
+      "Enable economy": false,
+      "Which economy plugins do you want to use? (Economics, Server Rewards, IQEconomic)": [
+        "Economics",
+        "Server Rewards",
+        "IQEconomic"
+      ],
+      "The minimum value that a player must collect to get points for the economy": 0.0,
+      "The minimum value that a winner must collect to make the commands work": 0.0,
+      "Looting of crates": {
+        "assets/prefabs/deployable/chinooklockedcrate/codelockedhackablecrate.prefab": 0.4
+      },
+      "Killing an NPC": 1.0,
+      "Killing an Bradley": 5.0,
+      "Killing an Heli": 5.0,
+      "Killing an sedan": 0.0,
+      "Killing an mpdular Car": 0.0,
+      "Killing a turret": 1.0,
+      "Killing a Samsite": 0.0,
+      "Hacking a locked crate": 1.0,
+      "List of commands that are executed in the console at the end of the event ({steamid} - the player who collected the highest number of points)": []
+    },
+    "BetterNpc Setting": {
+      "Allow Npc spawn after destroying Bradley": false,
+      "Allow Npc spawn after destroying Heli": false
+    },
+    "GUI Announcements setting": {
+      "Do you use the GUI Announcements? [true/false]": false,
+      "Banner color": "Grey",
+      "Text color": "White",
+      "Adjust Vertical Position": 0.03
+    },
+    "Notify setting": {
+      "Do you use the Notify? [true/false]": false,
+      "Type": "0"
+    },
+    "DiscordMessages setting": {
+      "Webhook URL": "https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks",
+      "Do you use the Discord? [true/false]": false,
+      "Embed Color (DECIMAL)": 13516583,
+      "Keys of required messages": [
+        "PreStart",
+        "EventStart",
+        "PreFinish",
+        "Finish",
+        "StartHackCrate"
+      ]
+    }
+  }
+}

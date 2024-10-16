@@ -1,0 +1,291 @@
+{
+  "settings": {
+    "Tabs": [
+      {
+        "ButtonText": "General",
+        "HeaderText": "Welcome to Tangerine 🍊",
+        "Pages": [
+          {
+            "TextLines": [
+              "Welcome to Tangerine, a Rust server like no other!",
+              "",
+              "This server is Bitcoin-focused with unique gameplay features:",
+              "- PvE except for dedicated PvP zones near high-value monuments",
+              "- Monthly wipes on the first Thursday of the month.",
+              "- Blueprints wipe with the map.",
+              "- Vanilla default team limits.",
+              "- Location: North America",
+              "- Max Player Capacity: 50 players",
+              "- Team Limits: 8 players per team",
+              "- Tool Cupboard (TC) Limits: 3 TCs per player",
+              "",
+              "Tangerine is currently in an Alpha state and may have bugs or other issues",
+              "appear. We are working as fast as possible to issue patches and fix problems.",
+              "Read more about the server using the tabs on the left. These will give you",
+              "everything you need to know for a fun and exciting experience.",
+              "",
+              "See this again using /info"
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "Commands",
+        "HeaderText": "Available Commands",
+        "Pages": [
+          {
+            "TextLines": [
+              "You must first authenticate by linking your Discord handle to your SteamID.",
+              "",
+              "To authenticate:",
+              "/auth - Use this command to link your Discord handle to your SteamID.",
+              "Once authenticated, you will have access to additional server commands.",
+              "",
+              "Our Discord is hosted within the Orange Discord Server. You can join the",
+              "server by visiting https://dsc.gg/orangemart or by scanning the QR code",
+              "to the right hand corner of this screen. Once you've joined the Discord",
+              "send your verification code to the server Tangerine in a DM. The server",
+              "bot can be found in the members list.",
+              "",
+              "If you are unable to send a message to @Tangerine in DM you may need to",
+              "change a Discord privacy setting for a moment so you can reach the bot.",
+              "",
+              "Check next page for authed commands."
+            ],
+            "ImageSettings": [
+              {
+                "Position": {
+                  "MinX": 0.65,
+                  "MaxX": 0.85,
+                  "MinY": 0.65,
+                  "MaxY": 0.85
+                },
+                "Url": "https://i.imgur.com/eWAseZE.png",
+                "TransparencyInPercent": 100
+              }
+            ]
+          },
+          {
+            "TextLines": [
+              "Here are the commands available after authentication:",
+              "",
+              "/claim - Claim any blood you've earned from the past wipe.",
+              "/bitcoin - Claim your Bitcoin mining rig to start producing hash.",
+              "/sendblood - Redeem your blood for sats by specifying the amount and a Lightning address.",
+              "/buyblood - Purchase Blood and get a Lightning invoice.",
+              "/attachradio - Attach a car radio to the vehicle you're looking at.",
+              "/detachradio - Remove a car radio from the vehicle you're looking at.",
+              "/rb - Check the status of Raidable Bases events.",
+              "/rb ladder - Check the progression of points for finishing Raidable Bases.",
+              "/remove - Enter the Remover Tool to remove walls from your base for a fee.",
+              "/sb - Open the Skinbox UI to skin your items.",
+              "/market - Open the marketplace UI to see all available vendors.",
+              "/sil - Download the image from the URL to the server and display it on the sign you are currently looking at.",
+              "/sili - Add the currently held items icon to a sign or frame.",
+              "/deauth - Deauthenticates the player from Discord authentication.",
+              "/info - Reopen this informational tab.",
+              "!pop - Display server population stats.",
+              "",
+              "Use these commands to maximize your experience!"
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "Bitcoin Rewards",
+        "HeaderText": "Bitcoin Rewards System",
+        "Pages": [
+          {
+            "TextLines": [
+              "Earn Bitcoin rewards by collecting and turning in hash (represented by Paper).",
+              "- Hash can be generated by your mining rig or found scattered across the map.",
+              "- The more hash you turn in, the bigger your share of the Bitcoin rewards!",
+              "- Your % of the total turn-ins determines the blood (currency) you receive in the next block.",
+              "",
+              "Tangerine introduces 'Blood' as a representation of satoshis within the game. Players can",
+              "redeem Blood for real-life sats using the /sendblood command, or purchase Blood via the",
+              "/buyblood command, generating a Lightning invoice.",
+              "",
+              "Rewards are sponsored by Orangemart, with a pool of 100,000 sats for each block.",
+              "Turn in hash at the Community Center near Outpost for rewards."
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "Bitcoin Miner",
+        "HeaderText": "Bitcoin Miner Mechanics",
+        "Pages": [
+          {
+            "TextLines": [
+              "The Bitcoin Miner is an integral part of our server’s economy.",
+              "",
+              "Players can construct mining rigs with PSUs and hashboards, producing hash (represented",
+              "by Paper).",
+              "",
+              "- Construct different PSUs (Tier 1, Tier 2, Tier 3)",
+              "- Start by upgrading your PSU so there is power for your hashboards.",
+              "- Higher tier PSUs will provide more power to hashboards.",
+              "- Higher tier HBs generate more hash.",
+              "- Hash can be turned in at the Community Center near Outpost for rewards.",
+              "- If you pickup the miner it will reset your hashboards and PSU.",
+              "",
+              "Keep upgrading your rig to maximize your hash production!"
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "How Bitcoin is Used",
+        "HeaderText": "Bitcoin in Tangerine",
+        "Pages": [
+          {
+            "TextLines": [
+              "In Tangerine, Bitcoin is not only a reward but an integral part of the gameplay.",
+              "",
+              "Blood = Satoshis:",
+              "- Blood can be redeemed for sats using the /sendblood command with a Lightning address.",
+              "- Blood can also be purchased via the /buyblood command, generating a Lightning invoice.",
+              "",
+              "Each block has a prize pool of 100,000 sats, distributed based on the amount of hash turned in.",
+              "",
+              "Players can claim their earned blood rewards after the wipe by using /claim."
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "Server Rules",
+        "HeaderText": "Server Rules",
+        "Pages": [
+          {
+            "TextLines": [
+              "- No cheating, exploiting, or toxic behavior.",
+              "- Offensive behavior is not tolerated.",
+              "- Maintain a fun and competitive atmosphere.",
+              "",
+              "Admins actively monitor for cheaters. Breaking the rules can lead to penalties or bans.",
+              "Keep the community positive and competitive for all!"
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      },
+      {
+        "ButtonText": "ToS",
+        "HeaderText": "Terms of Service",
+        "Pages": [
+          {
+            "TextLines": [
+              "By playing on the Tangerine server, you agree to the following terms of service:",
+              "- All gameplay must follow the server rules listed in the 'Server Rules' tab.",
+              "- Admins reserve the right to ban or penalize players for violations.",
+              "- Players are responsible for their own actions within the game.",
+              "- The server is not responsible for any lost rewards due to rule violations or technical issues.",
+              "- Your IP and/or SteamID may be used for tracking purposes",
+              "",
+              "Continued use of the server implies acceptance of these terms."
+            ],
+            "ImageSettings": []
+          }
+        ],
+        "TabButtonAnchor": 4,
+        "TabButtonFontSize": 16,
+        "HeaderAnchor": 0,
+        "HeaderFontSize": 32,
+        "TextFontSize": 16,
+        "TextAnchor": 3,
+        "OxideGroup": ""
+      }
+    ],
+    "ShowInfoOnPlayerInit": true,
+    "ShowInfoOnlyOncePerRuntime": true,
+    "TabToOpenByDefault": 0,
+    "Position": {
+      "MinX": 0.15,
+      "MaxX": 0.9,
+      "MinY": 0.2,
+      "MaxY": 0.9
+    },
+    "BackgroundImage": {
+      "Enabled": true,
+      "Position": {
+        "MinX": 0.0,
+        "MaxX": 1.0,
+        "MinY": 0.0,
+        "MaxY": 1.0
+      },
+      "Url": "http://www.solidbackgrounds.com/images/1920x1080/1920x1080-black-solid-color-background.jpg",
+      "TransparencyInPercent": 100
+    },
+    "ActiveButtonColor": "#FF4500FF",
+    "InactiveButtonColor": "#4F4F4FFF",
+    "CloseButtonColor": "#C0C0C0FF",
+    "CloseButtonText": "Close",
+    "NextPageButtonColor": "#C0C0C0FF",
+    "NextPageText": "Next Page",
+    "PrevPageButtonColor": "#C0C0C0FF",
+    "PrevPageText": "Prev Page",
+    "BackgroundColor": "#000000FF",
+    "HelpButton": {
+      "IsEnabled": false,
+      "Text": "Help",
+      "Position": {
+        "MinX": 0.0,
+        "MaxX": 0.05,
+        "MinY": 0.1,
+        "MaxY": 0.14
+      },
+      "Color": "#128128128255",
+      "FontSize": 18
+    },
+    "UpgradedConfig": true
+  }
+}

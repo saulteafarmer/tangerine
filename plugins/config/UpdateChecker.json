@@ -1,0 +1,376 @@
+{
+  "Command to open UI": "ucsetup",
+  "Command to send the test message to your discord": "uctest",
+  "Console command to check orphaned config files": "uc_check_config",
+  "Console command to move orphaned config files": "uc_clean_config",
+  "Discord WebHook": "XXXXXXXXXXXXXXXXXX",
+  "Discord message ID": "1285057353955414087",
+  "Check updates on load [disable it if you have problem with the config]": true,
+  "Embed side line color [hex]": "#ffffff",
+  "Difference between UTC and your time [in minutes]": 240,
+  "Use 24 time format": true,
+  "Check Interval(In minutes)": 60,
+  "Ignore 'All plugins have the latest version' discord message": false,
+  "Ignore not found plugins": false,
+  "Add a link to the plugin to be updated": true,
+  "Enable auto search": {
+    "uMod": true,
+    "Codefling": true,
+    "Lone.Design": true,
+    "Chaos": true,
+    "RustWorkshop": false,
+    "Github": false,
+    "ModPulse": false,
+    "RustPlugins": true,
+    "ServerArmour": true,
+    "ImperialPlugins": true,
+    "MyVector": false,
+    "SkyPlugins": false
+  },
+  "List of plugins": [
+    {
+      "Name": "AdminDeepCover",
+      "Author": "Dana",
+      "Plugin version": "2.2.8",
+      "Link to plugin": "https://umod.org/plugins/admin-deep-cover",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "AdminPanel",
+      "Author": "nivex",
+      "Plugin version": "1.4.7",
+      "Link to plugin": "https://umod.org/plugins/admin-panel",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "AdminRadar",
+      "Author": "nivex",
+      "Plugin version": "5.3.6",
+      "Link to plugin": "https://umod.org/plugins/admin-radar",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "AlphaLoot",
+      "Author": "k1lly0u",
+      "Plugin version": "3.1.33",
+      "Link to plugin": "https://chaoscode.io/resources/alphaloot.13/",
+      "Marketplace": "Chaos",
+      "Ignore": false
+    },
+    {
+      "Name": "Biplane",
+      "Author": "Adem",
+      "Plugin version": "1.1.0",
+      "Link to plugin": "https://lone.design/product/biplane-rust-plugin/",
+      "Marketplace": "Lone.Design",
+      "Ignore": false
+    },
+    {
+      "Name": "BitcoinMiner",
+      "Author": "Nferno",
+      "Plugin version": "1.1.3",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": true
+    },
+    {
+      "Name": "CarRadio",
+      "Author": "TCM420G",
+      "Plugin version": "1.0.70",
+      "Link to plugin": "https://umod.org/plugins/car-radio",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "ChaosExtensionDownloader",
+      "Author": "k1lly0u",
+      "Plugin version": "0.1.1",
+      "Link to plugin": "https://chaoscode.io/resources/chaos.321/",
+      "Marketplace": "Chaos",
+      "Ignore": false
+    },
+    {
+      "Name": "CopyPaste",
+      "Author": "misticos",
+      "Plugin version": "4.2.0",
+      "Link to plugin": "https://umod.org/plugins/copy-paste",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "CupboardLimiter",
+      "Author": "Spiikesan",
+      "Plugin version": "1.7.6",
+      "Link to plugin": "https://umod.org/plugins/cupboard-limiter",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "CustomVendingSetup",
+      "Author": "WhiteThunder",
+      "Plugin version": "2.14.0",
+      "Link to plugin": "https://umod.org/plugins/custom-vending-setup",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "DepositBox",
+      "Author": "saulteafarmer",
+      "Plugin version": "0.1.0",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": true
+    },
+    {
+      "Name": "DiscordAuth",
+      "Author": "OuTSMoKE",
+      "Plugin version": "1.3.3",
+      "Link to plugin": "https://umod.org/plugins/discord-auth",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "DiscordStatus",
+      "Author": "Gonzi",
+      "Plugin version": "4.0.1",
+      "Link to plugin": "https://umod.org/plugins/discord-status",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "ImageLibrary",
+      "Author": "Absolut & K1lly0u",
+      "Plugin version": "2.0.62",
+      "Link to plugin": "https://umod.org/plugins/image-library",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "InventoryViewer",
+      "Author": "Whispers88",
+      "Plugin version": "4.1.2",
+      "Link to plugin": "https://umod.org/plugins/inventory-viewer",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "MonumentAddons",
+      "Author": "WhiteThunder",
+      "Plugin version": "0.18.2",
+      "Link to plugin": "https://umod.org/plugins/monument-addons",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "MonumentFinder",
+      "Author": "WhiteThunder",
+      "Plugin version": "3.1.4",
+      "Link to plugin": "https://umod.org/plugins/monument-finder",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "NoGiveNotices",
+      "Author": "Wulf",
+      "Plugin version": "0.3.0",
+      "Link to plugin": "https://umod.org/plugins/no-give-notices",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "NpcSpawn",
+      "Author": "KpucTaJl",
+      "Plugin version": "2.7.8",
+      "Link to plugin": "https://codefling.com/extensions/npc-spawn",
+      "Marketplace": "Codefling",
+      "Ignore": false
+    },
+    {
+      "Name": "PermissionsManager",
+      "Author": "Steenamaroo",
+      "Plugin version": "2.0.9",
+      "Link to plugin": "https://codefling.com/plugins/permissions-manager",
+      "Marketplace": "Codefling",
+      "Ignore": false
+    },
+    {
+      "Name": "PlayerAdministration",
+      "Author": "ThibmoRozier",
+      "Plugin version": "1.6.9",
+      "Link to plugin": "https://umod.org/plugins/player-administration",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "RadioStationManager",
+      "Author": "Whispers88",
+      "Plugin version": "1.0.4",
+      "Link to plugin": "https://umod.org/plugins/radio-station-manager",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "RemoverTool",
+      "Author": "Reneb/Fuji/Arainrr/Tryhard",
+      "Plugin version": "4.3.43",
+      "Link to plugin": "https://umod.org/plugins/remover-tool",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "Rustcord",
+      "Author": "Kirollos & OuTSMoKE",
+      "Plugin version": "3.3.2",
+      "Link to plugin": "https://umod.org/plugins/rustcord",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "ServerInfo",
+      "Author": "FastBurst",
+      "Plugin version": "0.5.9",
+      "Link to plugin": "https://umod.org/plugins/server-info",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "ServerPop",
+      "Author": "Mabel",
+      "Plugin version": "1.1.2",
+      "Link to plugin": "https://codefling.com/plugins/server-pop",
+      "Marketplace": "Codefling",
+      "Ignore": false
+    },
+    {
+      "Name": "SignArtist",
+      "Author": "Whispers88",
+      "Plugin version": "1.4.1",
+      "Link to plugin": "https://umod.org/plugins/sign-artist",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "SkinBox",
+      "Author": "k1lly0u",
+      "Plugin version": "2.2.15",
+      "Link to plugin": "https://chaoscode.io/resources/skinbox.17/",
+      "Marketplace": "Chaos",
+      "Ignore": false
+    },
+    {
+      "Name": "Sputnik",
+      "Author": "Adem",
+      "Plugin version": "1.4.5",
+      "Link to plugin": "https://lone.design/product/sputnik-rust-plugin/",
+      "Marketplace": "Lone.Design",
+      "Ignore": false
+    },
+    {
+      "Name": "UpdateChecker",
+      "Author": "tofurahie",
+      "Plugin version": "4.2.4",
+      "Link to plugin": "https://codefling.com/plugins/update-checker",
+      "Marketplace": "Codefling",
+      "Ignore": false
+    },
+    {
+      "Name": "Vanish",
+      "Author": "Whispers88",
+      "Plugin version": "1.8.7",
+      "Link to plugin": "https://umod.org/plugins/vanish",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "VendingMachineLogs",
+      "Author": "Ryz0r",
+      "Plugin version": "1.0.5",
+      "Link to plugin": "https://umod.org/plugins/vending-machine-logs",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "ZoneManager",
+      "Author": "k1lly0u",
+      "Plugin version": "3.1.5",
+      "Link to plugin": "https://umod.org/plugins/zone-manager",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "DefaultRadioStation",
+      "Author": "marcuzz",
+      "Plugin version": "1.1.0",
+      "Link to plugin": "https://umod.org/plugins/default-radio-station",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "MarketplaceUi",
+      "Author": "The_Kiiiing",
+      "Plugin version": "1.0.4",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": false
+    },
+    {
+      "Name": "ClaimPlayerRewards",
+      "Author": "saulteafarmer",
+      "Plugin version": "0.1.1",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": false
+    },
+    {
+      "Name": "Orangemart",
+      "Author": "saulteafarmer",
+      "Plugin version": "0.1.0",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": false
+    },
+    {
+      "Name": "TruePVE",
+      "Author": "nivex",
+      "Plugin version": "2.2.3",
+      "Link to plugin": "https://umod.org/plugins/true-pve",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "DynamicPVP",
+      "Author": "CatMeat/Arainrr",
+      "Plugin version": "4.2.20",
+      "Link to plugin": "https://umod.org/plugins/dynamic-pvp",
+      "Marketplace": "uMod",
+      "Ignore": false
+    },
+    {
+      "Name": "Bitcoin",
+      "Author": "Nferno",
+      "Plugin version": "1.1.3",
+      "Link to plugin": "",
+      "Marketplace": "",
+      "Ignore": false
+    },
+    {
+      "Name": "Convoy",
+      "Author": "Adem",
+      "Plugin version": "2.6.1",
+      "Link to plugin": "https://codefling.com/plugins/convoy-reforged",
+      "Marketplace": "Codefling",
+      "Ignore": false
+    },
+    {
+      "Name": "RaidableBases",
+      "Author": "nivex",
+      "Plugin version": "2.9.5",
+      "Link to plugin": "https://umod.org/plugins/raidable-bases",
+      "Marketplace": "uMod",
+      "Ignore": false
+    }
+  ]
+}

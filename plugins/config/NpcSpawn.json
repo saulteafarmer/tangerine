@@ -1,0 +1,13 @@
+{
+  "Can NpcSpawn NPCs attack animals? [true/false]": false,
+  "Can NpcSpawn NPCs attack other NPCs? [true/false]": false,
+  "Can NpcSpawn NPCs attack sleeping players? [true/false]": false,
+  "Can NpcSpawn NPCs attack wounded players? [true/false]": false,
+  "Can NpcSpawn NPCs attack players in SafeZone? [true/false]": false,
+  "Prefab path used for all NpcSpawn NPCs": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_heavy.prefab",
+  "Configuration version": {
+    "Major": 2,
+    "Minor": 7,
+    "Patch": 8
+  }
+}

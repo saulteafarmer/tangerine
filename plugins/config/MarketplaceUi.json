@@ -1,0 +1,7 @@
+{
+  "Show vending machine owner": true,
+  "Show vending machine grid position": true,
+  "Enable access via chat command": true,
+  "Chat command": "market",
+  "Enable access via computer station": true
+}
