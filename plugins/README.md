@@ -1,13 +1,15 @@
 # Tangerine Rust Server - Plugins
 
-This document provides an overview of the plugins used across the Tangerine Rust Server, along with brief descriptions of each plugin's role in server functionality, moderation, and gameplay enhancements.
+This document provides an overview of the plugins that power the Tangerine Rust Server, enhancing gameplay, moderation, and server functionality. Each plugin has been carefully selected to offer a balance of engaging events, Bitcoin integration, and administrative tools to ensure smooth operations. Whether it’s creating dynamic PvP zones, enabling Bitcoin mining, or managing in-game events like Raidable Bases and Sputnik, these plugins are vital to our unique server experience.
+
+For details on how each plugin is configured, you can view the [Plugin Configurations](/plugins/config/) for an in-depth look at the settings that tailor our server to its current setup.
 
 ## Plugins List
 
 ### Gameplay Enhancements
 
 - [AlphaLoot.cs](https://chaoscode.io/resources/alphaloot.13/): Modifies loot tables and spawn rates, allowing for customized loot distribution in crates and barrels.
-- Bitcoin.cs: Adds a Bitcoin reward system, tying in-game mechanics to Bitcoin mining and hash rewards.
+- Bitcoin.cs: Adds a Bitcoin mining system to the server.
 - [DynamicPVP.cs](https://umod.org/plugins/dynamic-pvp): Handles our dynamicPVP zones at monuments
 - [RemoverTool.cs](https://umod.org/plugins/remover-tool): Allows players or admins to remove placed structures or objects for a fee or free.
 - [SkinBox.cs](https://chaoscode.io/resources/skinbox.17/): Provides players with access to skins for their items via the SkinBox plugin.
@@ -15,9 +17,10 @@ This document provides an overview of the plugins used across the Tangerine Rust
 
 ### Events & Challenges
 
-- [RaidableBases.cs](https://lone.design/product/raidable-bases-rust-plugin/): Adds bases to the game that players can raid, either as pre-built locations or admin-spawned events.
 - [ClaimPlayerRewards.cs](https://github.com/goodmorningbitcoin/Claim-Player-Rewards): Handles the /claim command for players to claim blood or other rewards based on performance in the wipe.
-- [DepositBox.cs](https://github.com/goodmorningbitcoin/DepositBox): Manages the deposit of hash (represented as paper) into specific boxes for rewards and events like Hodl Havoc.
+- [Convoy Reforged](https://codefling.com/plugins/convoy-reforged): A plugin for spawning Convoys of NPCs on the roads
+- [DepositBox.cs](https://github.com/goodmorningbitcoin/DepositBox): Manages the deposit of hash (represented as paper) into specific boxes for rewards and events.
+- [RaidableBases.cs](https://lone.design/product/raidable-bases-rust-plugin/): Adds bases to the game that players can raid, either as pre-built locations or admin-spawned events.
 - [Sputnik.cs](https://lone.design/product/sputnik/): A plugin for spawning satellite-like objects in-game, offering high-value loot guarded by defenses.
 
 ### Utility Plugins
@@ -28,10 +31,9 @@ This document provides an overview of the plugins used across the Tangerine Rust
 - [CupboardLimiters.cs](https://umod.org/plugins/cupboard-limiter): Limits the number of tool cupboards a player or team can place, balancing building control.
 - [CustomVendingSetup.cs](https://umod.org/plugins/custom-vending-setup): Customizes vending machines to sell specific items or services.
 - [DefaultRadioStation.cs](https://umod.org/plugins/default-radio-station): Sets up default radio stations for players to tune into in their bases or vehicles.
-- ItemCountTracker.cs: Allows for tracking of paper items on the server in player control.
 - [MarketplaceUi.cs](https://codefling.com/plugins/marketplace): A user interface for the in-game marketplace, making it easier for players to buy and sell items.
 - [MonumentAddons.cs](https://umod.org/plugins/monument-addons): Enhances or modifies the standard monuments with new features or interactions.
-- Orangemart.cs: Handles Bitcoin payment integration
+- [Orangemart.cs](https://github.com/rustysats/orangemart.cs): Handles Bitcoin payment integration
 - [RadioStationManager.cs](https://umod.org/plugins/radio-station-manager): Manages in-game radio stations.
 - [SignArtist.cs](https://umod.org/plugins/sign-artist): Allows players to upload custom images to in-game signs, useful for personalizing bases.
 

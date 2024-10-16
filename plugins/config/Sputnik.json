@@ -1,0 +1,1126 @@
+{
+  "Version": {
+    "Major": 1,
+    "Minor": 4,
+    "Patch": 5
+  },
+  "Prefix of chat messages": "[Sputnik]",
+  "Main Setting": {
+    "Enable automatic event holding [true/false]": true,
+    "Minimum time between events [sec]": 14400,
+    "Maximum time between events [sec]": 21600,
+    "The time until the destruction of the debris after the looting of all the crates (0 - do not destroy) [sec]": 300,
+    "Maximum range for damage to turrets/NPCs/mines (-1 - do not limit)": 100,
+    "Maximum range for damage to heli (-1 - do not limit)": 150,
+    "Enable logging of the start and end of the event? [true/false]": false
+  },
+  "Settings of the event aggression": {
+    "Aggressive mode is active all the time": false,
+    "The time for which the sputnik goes into aggressive mode after receiving damage": 120,
+    "NPCs are constantly in aggressive mode": true,
+    "Turrets are constantly in aggressive mode": true,
+    "Helicopters are constantly in aggressive mode": false,
+    "If one of the satellites is attacked, all the satellites will become aggressive (Useful when using settings 'Use the nearest drop points')": false
+  },
+  "Settings of the falling sputnik": {
+    "Falling Speed Multiplier": 1.0,
+    "Minimum height of the beginning of the fall": 500.0,
+    "Maximum height of the beginning of the fall": 1000.0,
+    "Minimum offset from the vertical axis when falling": 200.0,
+    "Maximum offset from the vertical axis when falling": 300.0,
+    "Number of effects when falling": 10
+  },
+  "Settings of the spawning sputnik debris": {
+    "Disable spawn on beaches? [true/false]": true,
+    "Disable spawn on rivers/lakes? [true/false]": true,
+    "Disable spawn on monuments? [true/false]": true,
+    "Use the nearest drop points (satellites will fall next to each other)": true,
+    "Number of cached spawn points": 25,
+    "Minimum distance between event points": 50.0
+  },
+  "Event presets": [
+    {
+      "Preset name": "station",
+      "Display name": "Fragment of the space station",
+      "Duration [sec.]": 3600,
+      "Probability": 20.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 0,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": 172800,
+      "Set of sputniks": [
+        "debris_2",
+        "debris_3",
+        "debris_4"
+      ]
+    },
+    {
+      "Preset name": "sputnik",
+      "Display name": "Sputnik",
+      "Duration [sec.]": 3600,
+      "Probability": 30.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 0,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Set of sputniks": [
+        "sputnik_1",
+        "debris_1"
+      ]
+    },
+    {
+      "Preset name": "spaceship",
+      "Display name": "Spaceship",
+      "Duration [sec.]": 3600,
+      "Probability": 30.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 0,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Set of sputniks": [
+        "sputnik_1",
+        "debris_1",
+        "debris_4"
+      ]
+    },
+    {
+      "Preset name": "big_sputnik",
+      "Display name": "Huge sputnik",
+      "Duration [sec.]": 3600,
+      "Probability": 20.0,
+      "The minimum time after the server's wipe when this preset can be selected automatically [sec]": 0,
+      "The maximum time after the server's wipe when this preset can be selected automatically [sec] (-1 - do not use this parameter)": -1,
+      "Set of sputniks": [
+        "sputnik_1",
+        "debris_1",
+        "debris_3",
+        "debris_4"
+      ]
+    }
+  ],
+  "Sputnik Debris Presets": [
+    {
+      "Preset name": "sputnik_1",
+      "Location preset (Data file)": "sputnik_1",
+      "NPC name - locations": {
+        "Cosmonaut": [
+          "(4, 0, -1)",
+          "(5, 0, 2.5)",
+          "(1.5, 0, -1.5)",
+          "(0.5, 0, 3.3)",
+          "(-2.1, 0, 1.1)",
+          "(-0.15, 0, 5.6)",
+          "(-6.7, 0, 3.3)",
+          "(-3.5, 0, 7.8)"
+        ]
+      },
+      "Turn on the card reader spawn? [true/false]": true,
+      "Location of the card reader": {
+        "Position": "(-3.69, 0.055, 7.180)",
+        "Rotation": "(341.285, 38.870, 0.638)"
+      },
+      "Heli preset name": "heli_1",
+      "Turret preset - locations": {
+        "turret_ak": [
+          {
+            "Position": "(-0.103, 0, 4.888)",
+            "Rotation": "(0, 88, 0)"
+          },
+          {
+            "Position": "(-3.922, 0, 7.955)",
+            "Rotation": "(0, 0, 0)"
+          }
+        ]
+      },
+      "Locations of crates with automatic ground level detection (Crate preset - locations)": {
+        "crateelite_default": [
+          {
+            "Position": "(0.0, 0.0, 1.9)",
+            "Rotation": "(0.0, 0.0, 0.0)"
+          },
+          {
+            "Position": "(-2.9, 0.0, 2.0)",
+            "Rotation": "(0.0, 115.9, 0.0)"
+          },
+          {
+            "Position": "(2.5, 0.0, -3.2)",
+            "Rotation": "(0.0, 0.0, 0.0)"
+          },
+          {
+            "Position": "(-4.0, 0.0, -1.6)",
+            "Rotation": "(0.0, 58.8, 0.0)"
+          }
+        ]
+      },
+      "Locations of crates without automatic ground level detection (Crate preset - locations)": {
+        "chinooklockedcrate_spacecard": [
+          {
+            "Position": "(-3.279, 0.487, 6.231)",
+            "Rotation": "(340.056, 38.203, 0)"
+          }
+        ]
+      },
+      "Locations of mines": [
+        "(1.7, 0.0, 4.3)",
+        "(0.3, 0.0, 4.3)",
+        "(2.6, 0.0, 1.0)",
+        "(0.7, 0.0, 2.5)",
+        "(-7.2, 0.0, 6.6)",
+        "(-7.2, 0.0, 4.2)",
+        "(-0.9, 0.0, 6.1)",
+        "(-2.1, 0.0, 7.1)",
+        "(-3.6, 0.0, 8.2)",
+        "(-5.8, 0.0, 6.6)",
+        "(-1.7, 0.0, 0.5)",
+        "(-3.9, 0.0, 0.5)",
+        "(-4.4, 0.0, 2.3)",
+        "(-4.4, 0.0, 4.2)",
+        "(2.6, 0.0, -1.4)",
+        "(4.9, 0.0, -4.0)",
+        "(2.1, 0.0, -6.3)",
+        "(2.0, 0.0, -8.2)",
+        "(-1.7, 0.0, -1.4)",
+        "(-0.2, 0.0, -8.7)",
+        "(-3.4, 0.0, -8.7)",
+        "(-3.9, 0.0, -6.3)",
+        "(-5.4, 0.0, -2.6)",
+        "(-8.6, 0.0, -0.8)"
+      ],
+      "Map marker setting": {
+        "Do you use the Marker? [true/false]": true,
+        "Use a vending marker? [true/false]": true,
+        "Use a circular marker? [true/false]": true,
+        "Display name": "Sputnik",
+        "Radius": 0.25,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        },
+        "Outline color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0
+        }
+      },
+      "Zone Setting": {
+        "Create a PVP zone? (only for those who use the TruePVE plugin)[true/false]": true,
+        "Use the dome? [true/false]": true,
+        "Darkening the dome": 5,
+        "Use a colored border? [true/false]": false,
+        "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+        "Brightness of the color border": 5,
+        "Radius": 150.0,
+        "Radiation power": 10.0
+      },
+      "Use custom spawn points? [true/false]": false,
+      "Custom spawn points": [],
+      "IQDrone preset": "lite"
+    },
+    {
+      "Preset name": "debris_1",
+      "Location preset (Data file)": "debris_1",
+      "NPC name - locations": {
+        "Cosmonaut": [
+          "(0.9, 0.0, 3.6)",
+          "(3.7, 0.0, -0.7)",
+          "(-1.9, 0.0, -3.2)",
+          "(-0.1, 0.0, -1.9)",
+          "(-0.5, -12.1, -9.2)",
+          "(-4.5, 0.0, -0.5)"
+        ]
+      },
+      "Turn on the card reader spawn? [true/false]": false,
+      "Location of the card reader": {
+        "Position": "(0, 0, 0)",
+        "Rotation": "(0, 0, 0)"
+      },
+      "Heli preset name": "",
+      "Turret preset - locations": {},
+      "Locations of crates with automatic ground level detection (Crate preset - locations)": {},
+      "Locations of crates without automatic ground level detection (Crate preset - locations)": {
+        "cratenormal_underwater_1": [
+          {
+            "Position": "(2.2, 0.0, 3.0)",
+            "Rotation": "(0.0, 344.2, 0.0)"
+          },
+          {
+            "Position": "(-1.4, 0.0, -2.2)",
+            "Rotation": "(0.0, 333.5, 0.0)"
+          }
+        ],
+        "cratenormal_underwater_2": [
+          {
+            "Position": "(-0.4, 0.0, 0.2)",
+            "Rotation": "(0.0, 0, 0.0)"
+          }
+        ]
+      },
+      "Locations of mines": [
+        "(4.9, 0.0, 2.1)",
+        "(4.7, 0.0, 0.8)",
+        "(3.5, 0.0, 2.6)",
+        "(1.8, 0.0, 3.6)",
+        "(1.3, 0.0, 2.7)",
+        "(0.1, 0.0, 2.4)",
+        "(-1.8, 0.0, 3.2)",
+        "(-4.2, 0.0, 0.7)",
+        "(3.4, 0.0, -0.4)",
+        "(4.4, 0.0, -2.0)",
+        "(2.6, 0.0, -3.0)",
+        "(2.9, 0.0, -4.5)",
+        "(-5.4, 0.0, -2.5)",
+        "(-0.1, 0.0, -5.4)",
+        "(-2.7, 0.0, -4.6)",
+        "(-0.9, 0.0, -2.5)"
+      ],
+      "Map marker setting": {
+        "Do you use the Marker? [true/false]": true,
+        "Use a vending marker? [true/false]": true,
+        "Use a circular marker? [true/false]": true,
+        "Display name": "(Space Card) Radioactive space debris",
+        "Radius": 0.2,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        },
+        "Outline color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0
+        }
+      },
+      "Zone Setting": {
+        "Create a PVP zone? (only for those who use the TruePVE plugin)[true/false]": true,
+        "Use the dome? [true/false]": true,
+        "Darkening the dome": 5,
+        "Use a colored border? [true/false]": false,
+        "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+        "Brightness of the color border": 5,
+        "Radius": 25.0,
+        "Radiation power": 10.0
+      },
+      "Use custom spawn points? [true/false]": false,
+      "Custom spawn points": [],
+      "IQDrone preset": "lite"
+    },
+    {
+      "Preset name": "debris_2",
+      "Location preset (Data file)": "debris_2",
+      "NPC name - locations": {
+        "Cosmonaut": [
+          "(0, 0, -2)",
+          "(-1, 0, 3)",
+          "(3, 0, 0)"
+        ]
+      },
+      "Turn on the card reader spawn? [true/false]": false,
+      "Location of the card reader": {
+        "Position": "(0, 0, 0)",
+        "Rotation": "(0, 0, 0)"
+      },
+      "Heli preset name": "",
+      "Turret preset - locations": {},
+      "Locations of crates with automatic ground level detection (Crate preset - locations)": {
+        "cratenormal_default": [
+          {
+            "Position": "(-2.2, 0, -1.8)",
+            "Rotation": "(0, 50, 0)"
+          },
+          {
+            "Position": "(0.75, 0, 2.25)",
+            "Rotation": "(0, 50, 0)"
+          },
+          {
+            "Position": "(3, 0, -2.25)",
+            "Rotation": "(0, 304, 0)"
+          }
+        ]
+      },
+      "Locations of crates without automatic ground level detection (Crate preset - locations)": {},
+      "Locations of mines": [],
+      "Map marker setting": {
+        "Do you use the Marker? [true/false]": true,
+        "Use a vending marker? [true/false]": true,
+        "Use a circular marker? [true/false]": true,
+        "Display name": "Space debris",
+        "Radius": 0.2,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        },
+        "Outline color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0
+        }
+      },
+      "Zone Setting": {
+        "Create a PVP zone? (only for those who use the TruePVE plugin)[true/false]": true,
+        "Use the dome? [true/false]": true,
+        "Darkening the dome": 5,
+        "Use a colored border? [true/false]": false,
+        "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+        "Brightness of the color border": 5,
+        "Radius": 25.0,
+        "Radiation power": 0.0
+      },
+      "Use custom spawn points? [true/false]": false,
+      "Custom spawn points": [],
+      "IQDrone preset": "lite"
+    },
+    {
+      "Preset name": "debris_3",
+      "Location preset (Data file)": "debris_3",
+      "NPC name - locations": {
+        "Cosmonaut": [
+          "(-1.621, 0, 1.95)",
+          "(1.08, 0, -2.04)",
+          "(0.111, 0, 2.941)"
+        ]
+      },
+      "Turn on the card reader spawn? [true/false]": false,
+      "Location of the card reader": {
+        "Position": "(0, 0, 0)",
+        "Rotation": "(0, 0, 0)"
+      },
+      "Heli preset name": "",
+      "Turret preset - locations": {},
+      "Locations of crates with automatic ground level detection (Crate preset - locations)": {
+        "cratenormal_default": [
+          {
+            "Position": "(0.13, 0, 1.9)",
+            "Rotation": "(0, 50, 0)"
+          }
+        ],
+        "crateelite_default": [
+          {
+            "Position": "(1.465, 0.0, -0.625)",
+            "Rotation": "(0.0, 290, 0.0)"
+          },
+          {
+            "Position": "(-0.264, 0.0, -1.919)",
+            "Rotation": "(0.0, 0, 0.0)"
+          }
+        ]
+      },
+      "Locations of crates without automatic ground level detection (Crate preset - locations)": {},
+      "Locations of mines": [],
+      "Map marker setting": {
+        "Do you use the Marker? [true/false]": true,
+        "Use a vending marker? [true/false]": true,
+        "Use a circular marker? [true/false]": true,
+        "Display name": "Space debris",
+        "Radius": 0.2,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        },
+        "Outline color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0
+        }
+      },
+      "Zone Setting": {
+        "Create a PVP zone? (only for those who use the TruePVE plugin)[true/false]": true,
+        "Use the dome? [true/false]": true,
+        "Darkening the dome": 5,
+        "Use a colored border? [true/false]": false,
+        "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+        "Brightness of the color border": 5,
+        "Radius": 25.0,
+        "Radiation power": 0.0
+      },
+      "Use custom spawn points? [true/false]": false,
+      "Custom spawn points": [],
+      "IQDrone preset": "lite"
+    },
+    {
+      "Preset name": "debris_4",
+      "Location preset (Data file)": "debris_4",
+      "NPC name - locations": {
+        "Cosmonaut": [
+          "(1.334, 0, 3.326",
+          "(1.793, 0, -1.614)"
+        ]
+      },
+      "Turn on the card reader spawn? [true/false]": false,
+      "Location of the card reader": {
+        "Position": "(0, 0, 0)",
+        "Rotation": "(0, 0, 0)"
+      },
+      "Heli preset name": "",
+      "Turret preset - locations": {},
+      "Locations of crates with automatic ground level detection (Crate preset - locations)": {
+        "cratenormal_default": [
+          {
+            "Position": "(2.481, 0, 2.517)",
+            "Rotation": "(0, 25, 0)"
+          },
+          {
+            "Position": "(0.911, 0, 2.207)",
+            "Rotation": "(0, 320, 0)"
+          },
+          {
+            "Position": "(2.186, 0, -0.275)",
+            "Rotation": "(0, 347, 0)"
+          }
+        ]
+      },
+      "Locations of crates without automatic ground level detection (Crate preset - locations)": {},
+      "Locations of mines": [],
+      "Map marker setting": {
+        "Do you use the Marker? [true/false]": true,
+        "Use a vending marker? [true/false]": true,
+        "Use a circular marker? [true/false]": true,
+        "Display name": "Space debris",
+        "Radius": 0.2,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        },
+        "Outline color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0
+        }
+      },
+      "Zone Setting": {
+        "Create a PVP zone? (only for those who use the TruePVE plugin)[true/false]": true,
+        "Use the dome? [true/false]": true,
+        "Darkening the dome": 5,
+        "Use a colored border? [true/false]": false,
+        "Border color (0 - blue, 1 - green, 2 - purple, 3 - red)": 2,
+        "Brightness of the color border": 5,
+        "Radius": 25.0,
+        "Radiation power": 0.0
+      },
+      "Use custom spawn points? [true/false]": false,
+      "Custom spawn points": [],
+      "IQDrone preset": "lite"
+    }
+  ],
+  "Space card setting": {
+    "ShortName": "keycard_green",
+    "Name (empty - default)": "SPACE CARD",
+    "SkinID (0 - default)": 2841475252,
+    "Multiplier of card health loss when using": 1.0,
+    "Enable spawn in crates": true,
+    "Setting up spawn in crates (prefab - probability)": {
+      "assets/bundled/prefabs/radtown/crate_elite.prefab": 5.0
+    }
+  },
+  "Crate presets": [
+    {
+      "Preset Name": "chinooklockedcrate_spacecard",
+      "Prefab": "assets/prefabs/deployable/chinooklockedcrate/codelockedhackablecrate.prefab",
+      "Do you need to use a space card to open the box? [true/false]": true,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": true,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 4,
+        "Maximum numbers of items": 8,
+        "List of items": [
+          {
+            "ShortName": "metal.fragments",
+            "Minimum": 1,
+            "Maximum": 27000,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "metal.refined",
+            "Minimum": 1,
+            "Maximum": 165,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "fuse",
+            "Minimum": 1,
+            "Maximum": 18,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "techparts",
+            "Minimum": 1,
+            "Maximum": 27,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "wiretool",
+            "Minimum": 1,
+            "Maximum": 3,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "electric.battery.rechargable.small",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "electric.battery.rechargable.medium",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "electric.battery.rechargable.large",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "chinooklockedcrate_default",
+      "Prefab": "assets/prefabs/deployable/chinooklockedcrate/codelockedhackablecrate.prefab",
+      "Do you need to use a space card to open the box? [true/false]": false,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "wood",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "crateelite_default",
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_elite.prefab",
+      "Do you need to use a space card to open the box? [true/false]": false,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "wood",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "cratenormal_underwater_1",
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal.prefab",
+      "Do you need to use a space card to open the box? [true/false]": false,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "wood",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "cratenormal_underwater_2",
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal_2.prefab",
+      "Do you need to use a space card to open the box? [true/false]": false,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": true,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": true,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "keycard_green",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 2841475252,
+            "Name (empty - default)": "SPACE CARD",
+            "List of genomes": []
+          }
+        ]
+      }
+    },
+    {
+      "Preset Name": "cratenormal_default",
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "Do you need to use a space card to open the box? [true/false]": false,
+      "Time to unlock the crates (LockedCrate) [sec.]": 0.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 2,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "wood",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "NPC presets": [
+    {
+      "Name": "Cosmonaut",
+      "Health": 200.0,
+      "Wear items": [
+        {
+          "ShortName": "hazmatsuit",
+          "skinID (0 - default)": 10180
+        }
+      ],
+      "Belt items": [
+        {
+          "ShortName": "rifle.lr300",
+          "Amount": 1,
+          "skin (0 - default)": 0,
+          "Mods": [
+            "weapon.mod.flashlight",
+            "weapon.mod.holosight"
+          ],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "syringe.medical",
+          "Amount": 10,
+          "skin (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        },
+        {
+          "ShortName": "grenade.f1",
+          "Amount": 10,
+          "skin (0 - default)": 0,
+          "Mods": [],
+          "Ammo": ""
+        }
+      ],
+      "Kit": "",
+      "Roam Range": 5.0,
+      "Chase Range": 15.0,
+      "Attack Range Multiplier": 1.0,
+      "Sense Range": 100.0,
+      "Memory duration [sec.]": 60.0,
+      "Scale damage": 1.0,
+      "Aim Cone Scale": 1.0,
+      "Detect the target only in the NPC's viewing vision cone?": false,
+      "Vision Cone": 135.0,
+      "Speed": 7.5,
+      "Should remove the corpse?": true,
+      "Disable radio effects? [true/false]": false,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 4,
+        "List of items": [
+          {
+            "ShortName": "rifle.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "shotgun.pump",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          },
+          {
+            "ShortName": "pistol.semiauto",
+            "Minimum": 1,
+            "Maximum": 1,
+            "Chance [0.0-100.0]": 5.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "Heli presets": [
+    {
+      "Name": "heli_1",
+      "HP": 10000.0,
+      "HP of the main rotor": 750.0,
+      "HP of tail rotor": 375.0,
+      "Numbers of crates": 3,
+      "Flying height": 50.0,
+      "Bullet speed": 250.0,
+      "Bullet Damage": 20.0,
+      "The distance to which the helicopter can move away from the sputnik": 100.0,
+      "The time for which the helicopter can leave the satellite to attack the target [sec.]": 30.0,
+      "Own loot table": {
+        "Clear the standard content of the crate": false,
+        "Allow the AlphaLoot plugin to spawn items in this crate": false,
+        "Allow the CustomLoot plugin to spawn items in this crate": false,
+        "Setting up loot from the loot table": {
+          "Enable spawn loot from prefabs": false,
+          "List of prefabs (one is randomly selected)": [
+            {
+              "Prefab displayName": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+              "Minimum Loot multiplier": 1,
+              "Maximum Loot multiplier": 1
+            }
+          ]
+        },
+        "Enable spawn of items from the list": false,
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 1,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": "",
+            "List of genomes": []
+          }
+        ]
+      }
+    }
+  ],
+  "Turrets presets": [
+    {
+      "Preset Name": "turret_ak",
+      "Choose the spawn height automatically?": true,
+      "Health": 250.0,
+      "Weapon ShortName": "rifle.ak",
+      "Ammo ShortName": "ammo.rifle",
+      "Number of ammo": 200,
+      "Target detection range (0 - do not change)": 0.0,
+      "Target loss range (0 - do not change)": 0.0
+    },
+    {
+      "Preset Name": "turret_m249",
+      "Choose the spawn height automatically?": false,
+      "Health": 300.0,
+      "Weapon ShortName": "lmg.m249",
+      "Ammo ShortName": "ammo.rifle",
+      "Number of ammo": 400,
+      "Target detection range (0 - do not change)": 0.0,
+      "Target loss range (0 - do not change)": 0.0
+    }
+  ],
+  "Notification Settings": {
+    "The time from the notification to the start of the event [sec]": 10,
+    "Use a Chat? [true/false]": true,
+    "The time until the end of the event, when a message is displayed about the time until the end of the event [sec]": [
+      300,
+      60,
+      30,
+      5
+    ],
+    "Facepunch Game Tips setting": {
+      "Use Facepunch Game Tips (notification bar above hotbar)? [true/false]": false,
+      "Style (0 - Blue Normal, 1 - Red Normal, 2 - Blue Long, 3 - Blue Short, 4 - Server Event)": 2
+    }
+  },
+  "GUI Setting": {
+    "Use the Countdown GUI? [true/false]": true,
+    "Vertical offset": -56
+  },
+  "Supported Plugins": {
+    "PVE Mode Setting": {
+      "Use the PVE mode of the plugin? [true/false]": false,
+      "Show the displayName of the event owner on a marker on the map? [true/false]": true,
+      "The amount of damage that the player has to do to become the Event Owner": 500.0,
+      "Damage coefficients for calculate to become the Event Owner.": {
+        "Npc": 1.0,
+        "Helicopter": 2.0,
+        "Turret": 2.0
+      },
+      "Can the non-owner of the event loot the crates? [true/false]": false,
+      "Can the non-owner of the event hack locked crates? [true/false]": false,
+      "Can the non-owner of the event loot NPC corpses? [true/false]": false,
+      "Can the non-owner of the event deal damage to the NPC? [true/false]": false,
+      "Can an Npc attack a non-owner of the event? [true/false]": false,
+      "Can Helicopter attack a non-owner of the event? [true/false]": false,
+      "Can the non-owner of the event do damage to Helicopter? [true/false]": false,
+      "Can Turret attack a non-owner of the event? [true/false]": false,
+      "Can the non-owner of the event do damage to Turret? [true/false]": false,
+      "Allow the non-owner of the event to enter the event zone? [true/false]": false,
+      "Allow a player who has an active cooldown of the Event Owner to enter the event zone? [true/false]": true,
+      "The time that the Event Owner may not be inside the event zone [sec.]": 300,
+      "The time until the end of Event Owner status when it is necessary to warn the player [sec.]": 60,
+      "The time that the player can`t become the Event Owner, after the end of the event and the player was its owner [sec.]": 86400.0
+    },
+    "Economy Setting": {
+      "Enable economy": false,
+      "Which economy plugins do you want to use? (Economics, Server Rewards, IQEconomic)": [
+        "Economics",
+        "Server Rewards",
+        "IQEconomic"
+      ],
+      "The minimum value that a player must collect to get points for the economy": 0.0,
+      "The minimum value that a winner must collect to make the commands work": 0.0,
+      "Looting of crates": {
+        "assets/prefabs/deployable/chinooklockedcrate/codelockedhackablecrate.prefab": 0.4
+      },
+      "Killing an NPC": 2.0,
+      "Killing an Turret": 2.0,
+      "Killing an Heli": 5.0,
+      "Hacking a locked crate": 5.0,
+      "List of commands that are executed in the console at the end of the event ({steamid} - the player who collected the highest number of points)": []
+    },
+    "GUI Announcements setting": {
+      "Do you use the GUI Announcements? [true/false]": false,
+      "Banner color": "Grey",
+      "Text color": "White",
+      "Adjust Vertical Position": 0.03
+    },
+    "Notify setting": {
+      "Do you use the Notify? [true/false]": false,
+      "Type": 1
+    },
+    "DiscordMessages setting": {
+      "Do you use the Discord? [true/false]": false,
+      "Webhook URL": "https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks",
+      "Embed Color (DECIMAL)": 13516583,
+      "Keys of required messages": [
+        "PreStartEvent",
+        "StartEvent",
+        "Crash"
+      ]
+    },
+    "ZoneManager setting": {
+      "Do you use the ZoneManager? [true/false]": false,
+      "List of zone flags that block spawn": [
+        "eject",
+        "pvegod"
+      ],
+      "List of zone IDs that block spawn": [
+        "Example"
+      ]
+    },
+    "RaidableBases setting": {
+      "Do you use the RaidableBases? [true/false]": false
+    },
+    "RestoreUponDeath setting": {
+      "Prevent the actions of the RestoreUponDeath plugin in the event zone? [true/false]": false
+    },
+    "BetterNpc setting": {
+      "Allow Npc spawn after destroying Heli": false
+    },
+    "IQDronePatrol setting": {
+      "Allow drone spawn?": false,
+      "Presets": [
+        {
+          "Preset Name": "lite",
+          "Number of drones": 5,
+          "The number of drones that can be targeted at the same time": 5,
+          "Drone Key - probability [0 - 100]": {
+            "LITE_DRONE": 100
+          }
+        }
+      ]
+    }
+  }
+}

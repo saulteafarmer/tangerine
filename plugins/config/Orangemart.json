@@ -1,0 +1,17 @@
+{
+  "BuyCurrencyCommandName": "buyblood",
+  "BuyVipCommandName": "buyvip",
+  "CheckIntervalSeconds": 10,
+  "CurrencyItemID": 1776460938,
+  "CurrencyName": "blood",
+  "DiscordWebhookUrl": "XXXXXXXXXXXXXXXXXX",
+  "InvoiceTimeoutSeconds": 330,
+  "LNDHubConnection": "XXXXXXXXXXXXXXXXXX",
+  "MaxRetries": 30,
+  "PricePerCurrencyUnit": 1,
+  "RetryDelaySeconds": 10,
+  "SatsPerCurrencyUnit": 1,
+  "SendCurrencyCommandName": "sendblood",
+  "VipPermissionGroup": "vip",
+  "VipPrice": 1000
+}
