@@ -29,8 +29,7 @@ Blood is the primary asset on Tangerine and acts as a transferable in-game curre
 
 - **PvE-Oriented with PvP Zones**: Enjoy survival-focused gameplay without constant player threats, while still having dedicated PvP zones for risk and reward.
 - **Bitcoin Rewards**: Earn sats through in-game activities and engage with a Bitcoin-based economy.
-- **Unique Events**: Participate in Sputnik and Convoy Reforged for opportunities to earn mining resources and valuable rewards.
-- **Raid
+- **Unique Events**: Participate in Raidable Bases, Sputnik and Convoy Reforged for opportunities to earn mining resources and valuable rewards.
 - **Community-Driven**: Join a welcoming community that prioritizes both education and fun.
 
 ## 📜 Server Details and Logs
@@ -47,7 +46,7 @@ Please follow our server rules to ensure a fair and fun experience for everyone.
 
 ## 🛠️ Plugins
 
-Our server utilizes a selection of plugins to improve gameplay and add unique features. Learn more about the plugins we use in the [Plugins List](/README.md).
+Our server utilizes a selection of plugins to improve gameplay and add unique features. Learn more about the plugins we use in the [Plugins List](/plugins/README.md).
 
 ## 📄 License
 
