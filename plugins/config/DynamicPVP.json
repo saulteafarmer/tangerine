@@ -164,8 +164,8 @@
       "Event Timer Starts When Looted": false
     },
     "Hackable Crate Event": {
-      "Enable Event": true,
-      "Enable PVP Delay": true,
+      "Enable Event": false,
+      "Enable PVP Delay": false,
       "PVP Delay Time": 10.0,
       "Enable Domes": true,
       "Domes Darkness": 8,
