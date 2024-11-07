@@ -9,7 +9,6 @@ For details on how each plugin is configured, you can view the [Plugin Configura
 ### Gameplay Enhancements
 
 - [AlphaLoot.cs](https://chaoscode.io/resources/alphaloot.13/): Modifies loot tables and spawn rates, allowing for customized loot distribution in crates and barrels.
-- Bitcoin.cs: Adds a Bitcoin mining system to the server.
 - [DynamicPVP.cs](https://umod.org/plugins/dynamic-pvp): Handles our dynamicPVP zones at monuments
 - [RemoverTool.cs](https://umod.org/plugins/remover-tool): Allows players or admins to remove placed structures or objects for a fee or free.
 - [SkinBox.cs](https://chaoscode.io/resources/skinbox.17/): Provides players with access to skins for their items via the SkinBox plugin.
@@ -18,8 +17,9 @@ For details on how each plugin is configured, you can view the [Plugin Configura
 ### Events & Challenges
 
 - [ClaimPlayerRewards.cs](https://github.com/goodmorningbitcoin/Claim-Player-Rewards): Handles the /claim command for players to claim blood or other rewards based on performance in the wipe.
-- [Convoy Reforged](https://codefling.com/plugins/convoy-reforged): A plugin for spawning Convoys of NPCs on the roads
+- [Convoy Reforged.cs](https://codefling.com/plugins/convoy-reforged): A plugin for spawning Convoys of NPCs on the roads
 - [DepositBox.cs](https://github.com/goodmorningbitcoin/DepositBox): Manages the deposit of hash (represented as paper) into specific boxes for rewards and events.
+- [MiningFarm.cs](https://codefling.com/plugins/miningfarm): Manages Bitcoin mining for the server
 - [RaidableBases.cs](https://lone.design/product/raidable-bases-rust-plugin/): Adds bases to the game that players can raid, either as pre-built locations or admin-spawned events.
 - [Sputnik.cs](https://lone.design/product/sputnik/): A plugin for spawning satellite-like objects in-game, offering high-value loot guarded by defenses.
 
