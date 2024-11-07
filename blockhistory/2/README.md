@@ -1,4 +1,4 @@
-## Block 1 - Overview
+## Block 2 - Overview
 
 ### Key Features
 - **Bitcoin Rewards**: Players can continue to earn Bitcoin by turning in hash generated through mining rigs or found scattered across the map.
@@ -9,7 +9,7 @@
 
 ### Server Environment Variables
 - **Map Size**: 4500, procedurally generated.
-- **Map Seed**: 1951016938.
+- **Map Seed**: 197382723.
 - **PVP Server**: Base protection is enabled, with specific rules outlined below.
 - **Team Limits**: Maximum of 8 players per team.
 - **Tool Cupboard (TC) Limit**: 3 TCs per player.
@@ -33,10 +33,9 @@
 - **Map Wipe**: The map will wipe on the first Thursday of every month, with the next wipe scheduled for Thursday, November 7th, 2024.
 - **Blueprint Wipe**: Blueprints wipe alongside the map, the next blueprint wipe is also scheduled for Thursday, November 7th, 2024.
 
-## Changelog for Block 1
-- **10/04/2024**: Block 1 begins.
-- **10/08/2024**: Memory error caused miner error, daily restart implemented, claim reward given to authed players
-- **10/09/2024**: Raidable Bases relaunched
+## Changelog for Block 2
+- **11/7/2024**: Block 2 begins.
+- **12/05/2024**: Block 2 ends.
 
 ## Logs and Additional Information
 - [Hash Deposits Log](./depositboxlog.json)
@@ -48,22 +47,22 @@
 - **AdminRadar.cs**: Tracks players and items for admin use.
 - **AlphaLoot.cs**: Modifies loot tables and spawn rates.
 - **BiPlane.cs**: Allows players to use simple in-game aircraft.
-- **Bitcoin.cs**: Adds a Bitcoin reward system for in-game activities.
 - **CarRadio.cs**: Adds functional car radios.
 - **ChaosExtensionDownloader.cs**: Manages Chaos extensions for the server.
-- **ClaimPlayerRewards.cs**: Handles `/claim` command for claiming blood or rewards.
+- **ClaimPlayerRewards.cs**: Handles /claim command for claiming blood or rewards.
 - **CopyPaste.cs**: Enables admins to copy and paste structures.
 - **CupboardLimiters.cs**: Limits the number of TCs a player can place.
 - **CustomVendingSetup.cs**: Customizes vending machines for in-game services.
 - **DefaultRadioStation.cs**: Sets up default radio stations for players.
 - **DepositBox.cs**: Manages hash deposits for rewards.
 - **DiscordAuth.cs**: Connects in-game profiles with Discord.
-- **DiscordStatus.cs**: Shows server status in Discord.
+- **Discord Presence**: Shows server status in Discord.
 - **DynamicPVP.cs**: Handles our dynamicPVP zones at monuments
 - **ImageLibrary.cs**: Renders custom user interfaces for plugins.
 - **InventoryViewer.cs**: Allows admins to manage player inventories.
 - **ItemCountTracker.cs**: Tracks in-game paper across the server.
 - **MarketplaceUi.cs**: Adds a UI for in-game marketplaces.
+- **MinerFarm.cs**: Adds a Bitcoin reward system for in-game activities.
 - **MonumentAddons.cs**: Adds features to standard monuments.
 - **MonumentFinder.cs**: Helps players locate monuments.
 - **NoGiveNotices.cs**: Suppresses notifications when items are given.
