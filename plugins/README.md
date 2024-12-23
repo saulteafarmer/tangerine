@@ -25,6 +25,7 @@ For details on how each plugin is configured, you can view the [Plugin Configura
 
 ### Utility Plugins
 
+- [Battlepass.cs](https://codefling.com/plugins/battlepass): Creates new daily challenges for players to earn rewards.
 - [BiPlane.cs](https://lone.design/product/biplane-rust-plugin/): Allows the creation and deployment of simple in-game aircraft for enhanced mobility.
 - [CarRadio.cs](https://umod.org/plugins/car-radio): Adds functional car radios, allowing players to play music while driving their vehicles.
 - [CopyPaste.cs](https://umod.org/plugins/copy-paste): Enables admins to copy and paste structures in the game world, useful for building event arenas or saving player builds.
@@ -65,3 +66,4 @@ For details on how each plugin is configured, you can view the [Plugin Configura
 - [NpcSpawn.cs](https://codefling.com/extensions/npc-spawn): Manages the spawning of NPCs at monuments or around the map.
 - [UpdateChecker.cs](https://codefling.com/plugins/update-checker): Automatically checks for updates to installed plugins, ensuring the server is running the latest versions.
 - [ZoneManager.cs](https://umod.org/plugins/zone-manager): Manages different zones on the map, such as safe zones or PvP zones, with different rules.
+- [ZonePVxInfo.cs](https://umod.org/plugins/zone-pvx-info): Shows a HUD on PvE/PvP name defined zones

@@ -1,15 +1,16 @@
 ## Block 2 - Overview
 
 ### Key Features
-- **Bitcoin Rewards**: Players can continue to earn Bitcoin by turning in hash generated through mining rigs or found scattered across the map.
+- **Bitcoin Rewards**: Players can earn Bitcoin rewards by turning scrap into the deposit boxes located at Outpost or Bandit Camp
 - **Custom Raidable Bases**: Raidable bases are present with special loot, providing new raid challenges for players.
-- **SkinBox Access**: Players can use the SkinBox plugin to customize their items with a variety of skins.
+- **Convoy**: A group of outsiders are leading a convoy through the map. Stop them and steal their loot for a chance at big rewards!
 - **Sputnik**: Satellite fragments will crash-land across the map, guarded by helicopters, NPCs, and turrets. Players must use Space Cards to access high-value loot.
-- **New Mining Event**: Special mining events will periodically take place, allowing players to compete for additional hash rewards.
+- **Mine a Scrap-o-hash**: Find mining components and cooling equipment to mine Scrap in your base
+- **Battlepass**: We've introduced a new Battlepass function that will let you complete daily tasks to earn Tangerine points to spend on new mining equipment!
 
 ### Server Environment Variables
 - **Map Size**: 4500, procedurally generated.
-- **Map Seed**: 197382723.
+- **Map Seed**: 1069026693.
 - **PVP Server**: Base protection is enabled, with specific rules outlined below.
 - **Team Limits**: Maximum of 8 players per team.
 - **Tool Cupboard (TC) Limit**: 3 TCs per player.
@@ -20,22 +21,23 @@
 - **Decay Rate**: Vanilla.
 
 ### Base Protection
-- **Base Protection**: 100% base protection is enabled for the entirety of Block 1.
+- **Base Protection**: 100% base protection will last until the last weekend of Block 3.
 - **Twig Structures**: Not protected—upgrade to wood or higher for protection.
+- **Raid Week**: Raid week will start on the last Monday of the wipe and run until the end of the wipe. 
 
-### Hash and Rewards
-- **Satoshi Reward Pool**: Players will compete for a total of 100,000 satoshis in rewards, generously provided by Orangemart, our main sponsor for this wipe.
+### Mining and Rewards
+- **Satoshi Reward Pool**: Players will compete for a total of 100,000 Satoshis in rewards, generously provided by Orangemart, our main sponsor for this wipe.
 - **Bitcoin Miner**: Utilize your own /bitcoin miner to generate hash to turn in throughout the wipe.
-- **Hash**: Hash can be generated via mining rigs or earned from various in-game events.
-- **Bitcoin Rewards**: Earn Bitcoin by turning in hash at the Outpost Community Center. The more hash you submit, the greater your share of the prize pool.
+- **Scrap-o-Hash**: Hash can be generated via mining rigs or earned from various in-game events.
+- **Bitcoin Rewards**: Earn Bitcoin by turning in Scrap at one of the Deposit Centers. The more hash you submit, the greater your share of the prize pool.
 
 ### Wipe Schedule
 - **Map Wipe**: The map will wipe on the first Thursday of every month, with the next wipe scheduled for Thursday, November 7th, 2024.
 - **Blueprint Wipe**: Blueprints wipe alongside the map, the next blueprint wipe is also scheduled for Thursday, November 7th, 2024.
 
-## Changelog for Block 2
-- **11/7/2024**: Block 2 begins.
-- **12/05/2024**: Block 2 ends.
+## Changelog for Block 3
+- **12/05/2024**: Block 3 begins.
+- **01/02/2024**: Block 3 ends.
 
 ## Logs and Additional Information
 - [Hash Deposits Log](./depositboxlog.json)
@@ -46,6 +48,7 @@
 - **AdminPanel.cs**: Provides an in-game admin panel for managing the server.
 - **AdminRadar.cs**: Tracks players and items for admin use.
 - **AlphaLoot.cs**: Modifies loot tables and spawn rates.
+- **Battlepass**: Creates a daily Battlepass for new rewards
 - **BiPlane.cs**: Allows players to use simple in-game aircraft.
 - **CarRadio.cs**: Adds functional car radios.
 - **ChaosExtensionDownloader.cs**: Manages Chaos extensions for the server.
