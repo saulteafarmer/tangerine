@@ -7,10 +7,11 @@
 
 ### 🛡️ PvE Focus
 - **Roam Freely**: Gather resources and explore the map without constant PvP threats. PvP zones are restricted to monuments, where higher-end rewards await.
+- **Raid Restriction**: Player bases are protected from other player damage once upgraded to Wood or higher. Raid Protection will end after the last weekend of the wipe.
 
 ### 🛠️ Bitcoin Mining
 - **Generate Hash**: Deploy your own Bitcoin mining rig and upgrade your PSU and hashboards to generate hash. Maximize your in-game earnings!
-- **Redeem Your Hash**: Visit the community center at Outpost turn your mined hash in to be counted
+- **Redeem Your Hash**: Visit the community center at Outpost or Bandit Camp turn your mined hash in to be counted
 - **Real Bitcoin Rewards**: Players compete to earn each block's reward. Each SteamID's share of the total hash turned in determines the Blood they can claim in the next block.
 
 ### 🩸 Blood = Satoshis

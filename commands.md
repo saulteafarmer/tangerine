@@ -6,12 +6,6 @@
 
 **/claim** - Claim any blood you've earned from the past wipe (block).
 
-**/bitcoin** - Claim your Bitcoin mining rig to start producing hash.
-
-**/attachradio** - Attach a car radio to the vehicle you're looking at.
-
-**/detachradio** - Remove a car radio from the vehicle you're looking at.
-
 **/rb** - Check the status of Raidable Bases events.
 
 **/remove** - Enter the Remover Tool to remove walls from your base for a fee.
@@ -24,7 +18,7 @@
 
 **!pop** - Check the server population.
 
-**/market** - Open the marketplace UI to see all available vendors.
+**/pass** - Open the Battlepass menu
 
 **/sil [raw]** - Download the image from the URL to the server and display it on the sign you are currently looking at. Specifying the raw argument allows you to ignore JPEG enforcement if that is enabled in the configuration file.
 
