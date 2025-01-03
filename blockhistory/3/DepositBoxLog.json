@@ -1,0 +1,2509 @@
+{
+  "deposits": [
+    {
+      "steamid": "76561199438439004",
+      "timestamp": "2024-12-05T20:56:29.6110990Z",
+      "amount_deposited": 1
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T02:56:53.9945200Z",
+      "amount_deposited": 1000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T02:56:54.2315670Z",
+      "amount_deposited": 1000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T02:56:54.4101570Z",
+      "amount_deposited": 81
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T04:06:05.5384870Z",
+      "amount_deposited": 1000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T04:06:08.0736470Z",
+      "amount_deposited": 676
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T04:07:13.1715410Z",
+      "amount_deposited": 18
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-06T10:35:11.1937960Z",
+      "amount_deposited": 25
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T14:07:53.3592310Z",
+      "amount_deposited": 764
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T14:07:55.6061780Z",
+      "amount_deposited": 1203
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T17:01:38.3739420Z",
+      "amount_deposited": 2910
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-06T19:45:29.5141400Z",
+      "amount_deposited": 74
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-06T20:11:55.8709530Z",
+      "amount_deposited": 344
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T21:01:33.6617530Z",
+      "amount_deposited": 2145
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T21:01:34.2166870Z",
+      "amount_deposited": 453
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T21:15:14.3992100Z",
+      "amount_deposited": 1917
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T22:13:30.1665370Z",
+      "amount_deposited": 3186
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T22:13:30.8025600Z",
+      "amount_deposited": 115
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-06T22:19:00.6092710Z",
+      "amount_deposited": 1444
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-06T23:37:41.6667410Z",
+      "amount_deposited": 1
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-06T23:37:49.2001630Z",
+      "amount_deposited": 3
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T10:05:53.4082650Z",
+      "amount_deposited": 1206
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T10:05:54.4026110Z",
+      "amount_deposited": 438
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T14:00:59.0158930Z",
+      "amount_deposited": 805
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T14:03:02.2251460Z",
+      "amount_deposited": 750
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T14:43:23.2250670Z",
+      "amount_deposited": 841
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T16:34:59.1015030Z",
+      "amount_deposited": 2899
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-07T16:43:08.5259480Z",
+      "amount_deposited": 284
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-07T16:43:08.8432860Z",
+      "amount_deposited": 2690
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T17:14:09.5699580Z",
+      "amount_deposited": 301
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-07T17:14:09.7834520Z",
+      "amount_deposited": 3947
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-07T17:26:25.3142710Z",
+      "amount_deposited": 1929
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-08T00:36:57.3179050Z",
+      "amount_deposited": 2112
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-08T00:36:58.0220010Z",
+      "amount_deposited": 160
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-08T02:37:39.9956740Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-08T02:37:41.3834000Z",
+      "amount_deposited": 1106
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-08T04:55:12.3072000Z",
+      "amount_deposited": 282
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-08T04:55:13.6062500Z",
+      "amount_deposited": 4879
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-08T16:36:36.3662310Z",
+      "amount_deposited": 118
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-08T21:45:48.1010110Z",
+      "amount_deposited": 554
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-08T23:44:18.5965070Z",
+      "amount_deposited": 134
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-08T23:44:25.3619120Z",
+      "amount_deposited": 486
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-09T01:26:18.8882610Z",
+      "amount_deposited": 500
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-09T05:13:45.0081740Z",
+      "amount_deposited": 1100
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-09T05:13:46.1017750Z",
+      "amount_deposited": 9432
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-09T05:42:20.8920120Z",
+      "amount_deposited": 113
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-09T12:53:23.4370490Z",
+      "amount_deposited": 3965
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-09T13:12:50.1003810Z",
+      "amount_deposited": 1088
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-09T18:13:36.5658610Z",
+      "amount_deposited": 745
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-10T00:03:45.3136930Z",
+      "amount_deposited": 283
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-10T00:03:47.1923750Z",
+      "amount_deposited": 2407
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-10T02:08:46.1836590Z",
+      "amount_deposited": 115
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-10T05:11:32.7894840Z",
+      "amount_deposited": 601
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-10T05:11:33.5241370Z",
+      "amount_deposited": 1690
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-10T05:51:31.0597990Z",
+      "amount_deposited": 1645
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-10T06:13:31.8900900Z",
+      "amount_deposited": 984
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-10T06:20:30.3593430Z",
+      "amount_deposited": 905
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-10T12:07:54.9984960Z",
+      "amount_deposited": 972
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-10T12:07:55.1872470Z",
+      "amount_deposited": 2380
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-10T12:07:55.4394520Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-10T13:55:57.2093190Z",
+      "amount_deposited": 1903
+    },
+    {
+      "steamid": "76561199101779933",
+      "timestamp": "2024-12-10T14:12:16.3110320Z",
+      "amount_deposited": 1101
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-10T14:38:58.0016990Z",
+      "amount_deposited": 1185
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-10T14:38:58.1942300Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-10T14:38:58.3835320Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-10T14:38:58.5548490Z",
+      "amount_deposited": 3395
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-10T14:38:58.7458780Z",
+      "amount_deposited": 1814
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-10T17:37:28.8077550Z",
+      "amount_deposited": 1238
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-10T18:07:44.6107120Z",
+      "amount_deposited": 3413
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-10T21:47:41.5973330Z",
+      "amount_deposited": 430
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-10T21:47:41.7893560Z",
+      "amount_deposited": 9250
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-10T23:30:02.5288810Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-10T23:30:02.8615070Z",
+      "amount_deposited": 48
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-10T23:30:03.0889650Z",
+      "amount_deposited": 286
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-11T00:39:50.7738750Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-11T00:39:51.0125270Z",
+      "amount_deposited": 420
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-11T01:37:43.8443520Z",
+      "amount_deposited": 8735
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T02:30:26.7035930Z",
+      "amount_deposited": 375
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T02:30:26.8992650Z",
+      "amount_deposited": 6420
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T02:30:27.0849270Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T02:30:27.2904200Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-11T03:58:46.8215460Z",
+      "amount_deposited": 3860
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-11T03:58:48.6316640Z",
+      "amount_deposited": 10000
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-11T07:14:55.8286710Z",
+      "amount_deposited": 8963
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-11T07:49:45.5017270Z",
+      "amount_deposited": 96085
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-11T12:35:12.5052740Z",
+      "amount_deposited": 555
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T13:56:12.8817160Z",
+      "amount_deposited": 1050
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T13:56:13.1362190Z",
+      "amount_deposited": 3669
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T19:02:22.9599450Z",
+      "amount_deposited": 26655
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-11T19:02:23.4706520Z",
+      "amount_deposited": 259
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-11T19:33:02.1067040Z",
+      "amount_deposited": 4722
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-11T19:33:02.2946640Z",
+      "amount_deposited": 30732
+    },
+    {
+      "steamid": "76561198047613170",
+      "timestamp": "2024-12-11T19:43:47.0045870Z",
+      "amount_deposited": 10390
+    },
+    {
+      "steamid": "76561198152210886",
+      "timestamp": "2024-12-11T21:09:21.4673160Z",
+      "amount_deposited": 500
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-12T01:10:16.5837300Z",
+      "amount_deposited": 22900
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-12T06:23:22.1530080Z",
+      "amount_deposited": 106544
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-12T06:23:23.3076780Z",
+      "amount_deposited": 576
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-12T07:55:17.6688290Z",
+      "amount_deposited": 132152
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-12T12:15:29.9334600Z",
+      "amount_deposited": 14230
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-12T12:15:31.8437860Z",
+      "amount_deposited": 184
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-12T12:15:32.5360250Z",
+      "amount_deposited": 17
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-12T13:29:30.5565350Z",
+      "amount_deposited": 3799
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-12T13:29:30.7126510Z",
+      "amount_deposited": 26130
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-12T13:33:14.9169590Z",
+      "amount_deposited": 653
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-12T17:54:29.9104060Z",
+      "amount_deposited": 406
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-12T18:30:31.2011240Z",
+      "amount_deposited": 469
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-13T01:14:39.6159700Z",
+      "amount_deposited": 18750
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T01:54:45.2543670Z",
+      "amount_deposited": 166335
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T01:54:45.8191620Z",
+      "amount_deposited": 20327
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-13T05:09:11.9631920Z",
+      "amount_deposited": 66891
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T12:28:26.9988710Z",
+      "amount_deposited": 40005
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T12:28:33.7299780Z",
+      "amount_deposited": 227
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T12:38:20.3012680Z",
+      "amount_deposited": 44382
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T12:38:21.9927290Z",
+      "amount_deposited": 22191
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T12:40:44.3022850Z",
+      "amount_deposited": 28324
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-13T13:33:07.7269010Z",
+      "amount_deposited": 443
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T14:19:29.9834230Z",
+      "amount_deposited": 84505
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T14:19:30.6111470Z",
+      "amount_deposited": 10
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-13T14:24:17.9782520Z",
+      "amount_deposited": 80030
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-13T15:34:01.3882060Z",
+      "amount_deposited": 4296
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-13T18:09:30.5503800Z",
+      "amount_deposited": 21123
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-13T18:09:30.9958410Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-13T18:17:02.9700300Z",
+      "amount_deposited": 1033
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-13T18:17:03.1401690Z",
+      "amount_deposited": 29
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-13T18:17:03.3875100Z",
+      "amount_deposited": 33000
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-13T18:20:55.2599560Z",
+      "amount_deposited": 6300
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-13T18:20:56.1229680Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T19:25:30.0342990Z",
+      "amount_deposited": 34415
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T19:25:30.2194100Z",
+      "amount_deposited": 4866
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T19:51:20.5337540Z",
+      "amount_deposited": 52945
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-13T19:51:20.7174340Z",
+      "amount_deposited": 4006
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-13T21:09:24.3724100Z",
+      "amount_deposited": 10035
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-13T21:15:39.8320360Z",
+      "amount_deposited": 43
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-13T21:36:11.4960420Z",
+      "amount_deposited": 113
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-14T00:07:12.5035660Z",
+      "amount_deposited": 23185
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-14T01:00:21.7266960Z",
+      "amount_deposited": 3381
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-14T07:36:19.5163500Z",
+      "amount_deposited": 102710
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-14T07:53:52.3871300Z",
+      "amount_deposited": 59900
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-14T12:13:25.6969260Z",
+      "amount_deposited": 25795
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-14T14:40:53.3991830Z",
+      "amount_deposited": 57860
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-14T15:06:33.9664740Z",
+      "amount_deposited": 94980
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-14T16:01:43.1521190Z",
+      "amount_deposited": 127335
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-14T18:51:55.2589350Z",
+      "amount_deposited": 24220
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-14T18:51:55.4426910Z",
+      "amount_deposited": 3875
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-15T00:44:50.7444300Z",
+      "amount_deposited": 58960
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-15T00:44:51.5253770Z",
+      "amount_deposited": 147
+    },
+    {
+      "steamid": "76561198437540401",
+      "timestamp": "2024-12-15T00:54:02.5141780Z",
+      "amount_deposited": 5000
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-15T01:45:19.5761900Z",
+      "amount_deposited": 106225
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-15T02:35:00.1731950Z",
+      "amount_deposited": 1
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-15T03:12:26.3304670Z",
+      "amount_deposited": 272778
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-15T04:51:31.3996450Z",
+      "amount_deposited": 133
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-15T06:03:28.2931280Z",
+      "amount_deposited": 67840
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-15T06:03:28.4847630Z",
+      "amount_deposited": 65
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-15T10:42:40.7215770Z",
+      "amount_deposited": 1080
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-15T10:42:41.3265560Z",
+      "amount_deposited": 124730
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-15T10:47:05.5797970Z",
+      "amount_deposited": 119065
+    },
+    {
+      "steamid": "76561198437540401",
+      "timestamp": "2024-12-15T14:07:27.2686430Z",
+      "amount_deposited": 22838
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-15T16:13:23.7024220Z",
+      "amount_deposited": 67445
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-15T16:13:23.8898790Z",
+      "amount_deposited": 4016
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-15T18:12:19.4018900Z",
+      "amount_deposited": 117646
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-15T18:41:09.7143240Z",
+      "amount_deposited": 83981
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-15T18:45:20.1807750Z",
+      "amount_deposited": 1173
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-15T18:45:20.9732170Z",
+      "amount_deposited": 927
+    },
+    {
+      "steamid": "76561198800683742",
+      "timestamp": "2024-12-15T20:09:12.4368450Z",
+      "amount_deposited": 60636
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-15T20:36:12.8115260Z",
+      "amount_deposited": 12035
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-15T23:09:47.5132280Z",
+      "amount_deposited": 1293
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-16T01:24:24.0925940Z",
+      "amount_deposited": 39290
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-16T01:24:24.4047560Z",
+      "amount_deposited": 4560
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-16T02:29:26.5723280Z",
+      "amount_deposited": 2328
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-16T02:29:26.9437110Z",
+      "amount_deposited": 1250
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-16T03:31:27.1849290Z",
+      "amount_deposited": 12835
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-16T03:31:28.3292710Z",
+      "amount_deposited": 8398
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-16T04:56:11.7014300Z",
+      "amount_deposited": 69375
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-16T12:06:34.5943840Z",
+      "amount_deposited": 16282
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-16T12:06:35.3044440Z",
+      "amount_deposited": 3639
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-16T12:31:34.2732420Z",
+      "amount_deposited": 1707
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-16T12:54:24.4547610Z",
+      "amount_deposited": 439
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-16T18:21:19.9377690Z",
+      "amount_deposited": 54235
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-16T18:21:20.1260110Z",
+      "amount_deposited": 1362
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-16T18:55:40.7849020Z",
+      "amount_deposited": 29115
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-16T21:18:11.5627250Z",
+      "amount_deposited": 125146
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-16T23:01:18.6808260Z",
+      "amount_deposited": 4742
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-17T00:51:01.6517150Z",
+      "amount_deposited": 2810
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-17T00:51:02.1262720Z",
+      "amount_deposited": 10420
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T02:36:04.7706980Z",
+      "amount_deposited": 205
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T02:58:46.0999030Z",
+      "amount_deposited": 248
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T03:33:01.5857590Z",
+      "amount_deposited": 950
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T03:41:20.8189070Z",
+      "amount_deposited": 875
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-17T04:47:11.9765370Z",
+      "amount_deposited": 13
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T06:31:34.9421540Z",
+      "amount_deposited": 1395
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T07:15:23.1701860Z",
+      "amount_deposited": 1310
+    },
+    {
+      "steamid": "76561199068150149",
+      "timestamp": "2024-12-17T07:28:22.0933740Z",
+      "amount_deposited": 340
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-17T13:46:41.4319060Z",
+      "amount_deposited": 2680
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-17T14:19:44.7306290Z",
+      "amount_deposited": 66680
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-17T14:25:02.8622830Z",
+      "amount_deposited": 10
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T16:55:00.4853590Z",
+      "amount_deposited": 24820
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T17:10:27.3881840Z",
+      "amount_deposited": 44
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T17:10:27.7104840Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-17T17:12:55.3741720Z",
+      "amount_deposited": 381
+    },
+    {
+      "steamid": "76561199696849012",
+      "timestamp": "2024-12-17T17:58:24.7238680Z",
+      "amount_deposited": 23
+    },
+    {
+      "steamid": "76561199696849012",
+      "timestamp": "2024-12-17T17:58:24.9577530Z",
+      "amount_deposited": 4
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T18:07:50.8759500Z",
+      "amount_deposited": 1854
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T19:09:17.3813280Z",
+      "amount_deposited": 3410
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-17T20:19:37.5806600Z",
+      "amount_deposited": 3230
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-17T20:22:17.1192230Z",
+      "amount_deposited": 429
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-17T20:23:30.1967670Z",
+      "amount_deposited": 866
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-17T20:23:31.3200480Z",
+      "amount_deposited": 250699
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-17T20:45:20.3961010Z",
+      "amount_deposited": 711
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-17T20:45:21.7040750Z",
+      "amount_deposited": 167
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-17T20:45:22.3435460Z",
+      "amount_deposited": 39
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-17T20:49:10.2334270Z",
+      "amount_deposited": 2865
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-17T22:24:23.5830460Z",
+      "amount_deposited": 104445
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-17T22:30:02.9519870Z",
+      "amount_deposited": 437680
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T00:11:46.7466490Z",
+      "amount_deposited": 6797
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-18T00:14:49.6603650Z",
+      "amount_deposited": 834
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-18T00:14:49.9207850Z",
+      "amount_deposited": 22150
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T01:40:32.0887200Z",
+      "amount_deposited": 2027
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T04:59:02.1526470Z",
+      "amount_deposited": 1334
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T04:59:02.4611340Z",
+      "amount_deposited": 1334
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T04:59:02.7516200Z",
+      "amount_deposited": 1333
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T04:59:02.9959140Z",
+      "amount_deposited": 1333
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T05:13:06.9783400Z",
+      "amount_deposited": 1155
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-18T05:23:28.0926170Z",
+      "amount_deposited": 35
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-18T05:33:52.6123230Z",
+      "amount_deposited": 10385
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-18T06:12:52.9159340Z",
+      "amount_deposited": 11486
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-18T06:12:53.9819900Z",
+      "amount_deposited": 66405
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T06:36:22.2332670Z",
+      "amount_deposited": 4848
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T06:36:22.5494020Z",
+      "amount_deposited": 1211
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-18T06:38:02.7220780Z",
+      "amount_deposited": 2057
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-18T06:38:02.9938420Z",
+      "amount_deposited": 1695
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-18T06:38:03.1618360Z",
+      "amount_deposited": 2984
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-18T06:38:03.4113320Z",
+      "amount_deposited": 1684
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-18T06:38:06.7951720Z",
+      "amount_deposited": 60
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T06:52:28.4740340Z",
+      "amount_deposited": 249
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T06:52:28.7887190Z",
+      "amount_deposited": 6397
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T07:02:03.6257480Z",
+      "amount_deposited": 305
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T07:36:51.9533770Z",
+      "amount_deposited": 253
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T07:36:52.3154810Z",
+      "amount_deposited": 2750
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-18T12:08:34.5462710Z",
+      "amount_deposited": 45
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-18T12:08:34.7359040Z",
+      "amount_deposited": 608721
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T13:36:29.8276510Z",
+      "amount_deposited": 26405
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-18T14:13:47.2203130Z",
+      "amount_deposited": 4033
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:16:28.4863960Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:16:36.2509770Z",
+      "amount_deposited": 12198
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:16:49.0551590Z",
+      "amount_deposited": 8132
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:16:53.6230280Z",
+      "amount_deposited": 5422
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:17:02.0729880Z",
+      "amount_deposited": 2711
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:17:03.4923890Z",
+      "amount_deposited": 2711
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:17:04.6460490Z",
+      "amount_deposited": 5422
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T16:20:24.8617810Z",
+      "amount_deposited": 97
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T16:20:25.2557380Z",
+      "amount_deposited": 7780
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-18T16:34:33.7976150Z",
+      "amount_deposited": 9075
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-18T16:38:55.8742640Z",
+      "amount_deposited": 7770
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-18T18:14:32.0177430Z",
+      "amount_deposited": 29500
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T18:57:14.8340130Z",
+      "amount_deposited": 21540
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T19:15:45.2731680Z",
+      "amount_deposited": 680
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T19:15:46.2097630Z",
+      "amount_deposited": 252
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-18T21:52:26.9948730Z",
+      "amount_deposited": 16904
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-18T21:52:27.5688290Z",
+      "amount_deposited": 272
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-18T22:08:46.0219610Z",
+      "amount_deposited": 8480
+    },
+    {
+      "steamid": "76561199068150149",
+      "timestamp": "2024-12-18T22:14:19.2817290Z",
+      "amount_deposited": 10002
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T22:26:29.7748040Z",
+      "amount_deposited": 18
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-18T22:26:30.1504830Z",
+      "amount_deposited": 9595
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-18T23:20:46.2526560Z",
+      "amount_deposited": 25575
+    },
+    {
+      "steamid": "76561198125808400",
+      "timestamp": "2024-12-18T23:46:27.3209250Z",
+      "amount_deposited": 100
+    },
+    {
+      "steamid": "76561198452457592",
+      "timestamp": "2024-12-19T00:15:40.5660450Z",
+      "amount_deposited": 45056
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T00:24:41.2149010Z",
+      "amount_deposited": 5695
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T00:24:41.7185480Z",
+      "amount_deposited": 93
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-19T00:40:47.5707000Z",
+      "amount_deposited": 25050
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-19T00:40:50.2250360Z",
+      "amount_deposited": 12365
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-19T00:40:52.7726270Z",
+      "amount_deposited": 2450
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-19T00:40:55.5807830Z",
+      "amount_deposited": 718
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T01:22:48.5472880Z",
+      "amount_deposited": 8300
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T01:59:53.2514880Z",
+      "amount_deposited": 27722
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-19T02:08:36.1900210Z",
+      "amount_deposited": 29180
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-19T04:42:33.8373470Z",
+      "amount_deposited": 205107
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-19T04:42:34.9353920Z",
+      "amount_deposited": 7362
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T05:12:45.3382490Z",
+      "amount_deposited": 6344
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T05:12:45.7806130Z",
+      "amount_deposited": 674
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T05:27:36.5569820Z",
+      "amount_deposited": 71
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T07:21:56.9840240Z",
+      "amount_deposited": 3925
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T07:21:57.4075190Z",
+      "amount_deposited": 187
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T10:33:55.5182480Z",
+      "amount_deposited": 66622
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T11:42:27.8100440Z",
+      "amount_deposited": 9688
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-19T11:49:59.9000720Z",
+      "amount_deposited": 1862
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T11:54:27.0924510Z",
+      "amount_deposited": 8266
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T14:43:01.8849440Z",
+      "amount_deposited": 9
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-19T14:47:25.2192820Z",
+      "amount_deposited": 7595
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-19T15:05:07.5755990Z",
+      "amount_deposited": 3865
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T16:31:58.0551260Z",
+      "amount_deposited": 6894
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T16:31:58.4817870Z",
+      "amount_deposited": 114
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T16:51:27.4377590Z",
+      "amount_deposited": 44
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-19T16:51:28.2156690Z",
+      "amount_deposited": 7111
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-19T17:04:42.0301460Z",
+      "amount_deposited": 860
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-19T17:17:45.5546110Z",
+      "amount_deposited": 8482
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-19T17:17:46.6744030Z",
+      "amount_deposited": 297
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-19T17:17:50.2661770Z",
+      "amount_deposited": 206690
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T21:30:01.9678310Z",
+      "amount_deposited": 720
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T21:30:02.8293100Z",
+      "amount_deposited": 830
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T22:03:13.4853740Z",
+      "amount_deposited": 28
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T22:03:13.8512810Z",
+      "amount_deposited": 240
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-19T22:36:58.9900070Z",
+      "amount_deposited": 6500
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T22:54:16.9251800Z",
+      "amount_deposited": 71146
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-19T23:08:00.0541260Z",
+      "amount_deposited": 461
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-19T23:37:57.1032660Z",
+      "amount_deposited": 3305
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-19T23:50:06.8891820Z",
+      "amount_deposited": 1968
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-20T01:27:44.3310390Z",
+      "amount_deposited": 10328
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T02:01:26.5116250Z",
+      "amount_deposited": 5519
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-20T02:03:06.5482810Z",
+      "amount_deposited": 4720
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-20T02:03:06.7545870Z",
+      "amount_deposited": 47065
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T02:13:49.2980280Z",
+      "amount_deposited": 5415
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-20T02:13:53.2338500Z",
+      "amount_deposited": 56974
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T02:13:57.4809740Z",
+      "amount_deposited": 2662
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T06:48:01.6745740Z",
+      "amount_deposited": 7475
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T06:48:02.0583200Z",
+      "amount_deposited": 848
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-20T08:44:17.1239860Z",
+      "amount_deposited": 20315
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-20T11:30:20.9721090Z",
+      "amount_deposited": 485
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-20T11:30:21.6557050Z",
+      "amount_deposited": 14140
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-20T11:58:25.7538300Z",
+      "amount_deposited": 1070
+    },
+    {
+      "steamid": "76561199068150149",
+      "timestamp": "2024-12-20T12:30:58.5219090Z",
+      "amount_deposited": 61
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T12:47:28.1584580Z",
+      "amount_deposited": 13
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-20T12:47:28.4179550Z",
+      "amount_deposited": 9605
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-20T13:30:01.6860930Z",
+      "amount_deposited": 3120
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-20T13:30:01.8931740Z",
+      "amount_deposited": 1338
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-20T17:15:50.9837160Z",
+      "amount_deposited": 2477
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-20T17:15:51.6084480Z",
+      "amount_deposited": 12090
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-20T20:08:34.4890720Z",
+      "amount_deposited": 170
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-20T20:31:27.1143580Z",
+      "amount_deposited": 45
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-20T20:31:30.6148620Z",
+      "amount_deposited": 2715
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-20T20:31:33.0446790Z",
+      "amount_deposited": 30628
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-20T22:30:16.4570930Z",
+      "amount_deposited": 22245
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-21T00:23:50.5418590Z",
+      "amount_deposited": 10
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-21T00:23:50.8051500Z",
+      "amount_deposited": 19870
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-21T00:48:38.6006130Z",
+      "amount_deposited": 30630
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-21T00:48:40.7756820Z",
+      "amount_deposited": 5465
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-21T00:48:42.9678400Z",
+      "amount_deposited": 2577
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-21T00:52:45.7161200Z",
+      "amount_deposited": 389
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-21T00:52:45.9006250Z",
+      "amount_deposited": 16010
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-21T01:14:48.2347870Z",
+      "amount_deposited": 24710
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-21T01:14:48.9890580Z",
+      "amount_deposited": 2046
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-21T04:44:15.0065410Z",
+      "amount_deposited": 8440
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-21T07:04:36.3302640Z",
+      "amount_deposited": 1069
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-21T07:04:37.0260730Z",
+      "amount_deposited": 8409
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-21T09:07:32.2961710Z",
+      "amount_deposited": 263822
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-21T09:07:32.4887730Z",
+      "amount_deposited": 12715
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-21T12:42:05.9039980Z",
+      "amount_deposited": 20
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-21T12:42:06.0954870Z",
+      "amount_deposited": 22520
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2024-12-21T13:01:40.1445070Z",
+      "amount_deposited": 623
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-21T14:49:36.5543790Z",
+      "amount_deposited": 1761
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-21T17:33:24.9249150Z",
+      "amount_deposited": 601720
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-21T17:33:25.1030870Z",
+      "amount_deposited": 154
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-21T17:42:15.2100570Z",
+      "amount_deposited": 485
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-21T18:20:00.9145900Z",
+      "amount_deposited": 125750
+    },
+    {
+      "steamid": "76561198848811915",
+      "timestamp": "2024-12-21T20:10:46.9072260Z",
+      "amount_deposited": 1
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-21T20:12:00.5311380Z",
+      "amount_deposited": 12265
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-21T20:12:01.6085180Z",
+      "amount_deposited": 3095
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-21T22:23:44.3206410Z",
+      "amount_deposited": 27310
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-21T23:09:08.4340360Z",
+      "amount_deposited": 3312
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-21T23:09:09.1689060Z",
+      "amount_deposited": 71545
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-22T00:00:52.3190530Z",
+      "amount_deposited": 212622
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-22T01:26:31.4073950Z",
+      "amount_deposited": 1174
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T01:35:14.1469540Z",
+      "amount_deposited": 29165
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T01:35:14.5270180Z",
+      "amount_deposited": 162
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-22T01:41:38.2611420Z",
+      "amount_deposited": 2146
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-22T01:41:40.8887240Z",
+      "amount_deposited": 19240
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T01:56:20.7130740Z",
+      "amount_deposited": 104
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-22T02:11:43.7447320Z",
+      "amount_deposited": 49634
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-22T03:44:30.9100930Z",
+      "amount_deposited": 31290
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T04:44:14.0110430Z",
+      "amount_deposited": 175
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T04:44:14.3866300Z",
+      "amount_deposited": 5734
+    },
+    {
+      "steamid": "76561199444064128",
+      "timestamp": "2024-12-22T05:12:43.2039140Z",
+      "amount_deposited": 85490
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T06:17:24.8338720Z",
+      "amount_deposited": 3170
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T06:17:25.1285840Z",
+      "amount_deposited": 634
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-22T06:48:10.6950140Z",
+      "amount_deposited": 325
+    },
+    {
+      "steamid": "76561198019673819",
+      "timestamp": "2024-12-22T10:45:34.0711380Z",
+      "amount_deposited": 552561
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-22T10:45:35.7436410Z",
+      "amount_deposited": 500000
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-22T14:38:30.4056790Z",
+      "amount_deposited": 61840
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-22T20:41:19.4272070Z",
+      "amount_deposited": 5537
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-22T20:41:19.6671790Z",
+      "amount_deposited": 72645
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-23T02:32:51.0597810Z",
+      "amount_deposited": 36145
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-23T02:32:53.5602730Z",
+      "amount_deposited": 2485
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-23T02:32:56.0641650Z",
+      "amount_deposited": 3203
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-23T03:06:01.9980580Z",
+      "amount_deposited": 357
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-23T03:06:02.2604640Z",
+      "amount_deposited": 66565
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-23T06:51:14.2418900Z",
+      "amount_deposited": 8625
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-23T15:44:21.8379280Z",
+      "amount_deposited": 5854
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-23T19:34:28.5460730Z",
+      "amount_deposited": 255
+    },
+    {
+      "steamid": "76561198053399134",
+      "timestamp": "2024-12-23T19:34:31.8658850Z",
+      "amount_deposited": 433908
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-24T02:37:38.7684760Z",
+      "amount_deposited": 70230
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-24T03:04:25.3992050Z",
+      "amount_deposited": 40640
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-24T03:04:27.5306740Z",
+      "amount_deposited": 8255
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-24T03:04:29.3891380Z",
+      "amount_deposited": 2918
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-24T03:11:56.5877250Z",
+      "amount_deposited": 1160
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-24T03:11:57.1549360Z",
+      "amount_deposited": 1064
+    },
+    {
+      "steamid": "76561198015716553",
+      "timestamp": "2024-12-24T15:19:09.6843710Z",
+      "amount_deposited": 1
+    },
+    {
+      "steamid": "76561198015716553",
+      "timestamp": "2024-12-24T15:19:27.8084990Z",
+      "amount_deposited": 43
+    },
+    {
+      "steamid": "76561198015716553",
+      "timestamp": "2024-12-24T15:19:29.1813490Z",
+      "amount_deposited": 396
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-24T18:09:16.3807000Z",
+      "amount_deposited": 12295
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-24T18:09:17.0074860Z",
+      "amount_deposited": 475
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-24T19:42:57.4032720Z",
+      "amount_deposited": 234415
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-24T21:13:08.6890300Z",
+      "amount_deposited": 20795
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-25T00:35:04.5771900Z",
+      "amount_deposited": 190975
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-25T00:35:04.8045320Z",
+      "amount_deposited": 16680
+    },
+    {
+      "steamid": "76561198805319908",
+      "timestamp": "2024-12-25T00:47:20.1246290Z",
+      "amount_deposited": 50085
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-25T02:51:21.2378180Z",
+      "amount_deposited": 107
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-25T02:51:22.0411540Z",
+      "amount_deposited": 66030
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-25T03:02:30.2850060Z",
+      "amount_deposited": 163
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-25T03:02:30.9815540Z",
+      "amount_deposited": 8315
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-25T07:10:16.4328620Z",
+      "amount_deposited": 83500
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-25T13:38:08.5625710Z",
+      "amount_deposited": 446
+    },
+    {
+      "steamid": "76561198333252975",
+      "timestamp": "2024-12-25T13:38:08.7481870Z",
+      "amount_deposited": 82551
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-25T13:56:31.1393800Z",
+      "amount_deposited": 54935
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-25T17:51:27.4234740Z",
+      "amount_deposited": 2718
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-26T03:03:14.1349850Z",
+      "amount_deposited": 94920
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-26T03:03:15.6143420Z",
+      "amount_deposited": 360
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-26T03:03:17.9465930Z",
+      "amount_deposited": 2857
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-26T03:13:15.4913340Z",
+      "amount_deposited": 577
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-26T03:13:16.0584200Z",
+      "amount_deposited": 9325
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-26T04:55:28.6175650Z",
+      "amount_deposited": 482390
+    },
+    {
+      "steamid": "76561198068119352",
+      "timestamp": "2024-12-26T04:55:29.9195610Z",
+      "amount_deposited": 17054
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-26T05:38:36.8742010Z",
+      "amount_deposited": 675
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-26T05:38:37.3509500Z",
+      "amount_deposited": 2166
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-26T10:46:16.0844030Z",
+      "amount_deposited": 2085
+    },
+    {
+      "steamid": "76561198437540401",
+      "timestamp": "2024-12-26T15:56:03.6516890Z",
+      "amount_deposited": 46209
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-26T16:56:00.5135910Z",
+      "amount_deposited": 23230
+    },
+    {
+      "steamid": "76561197985503302",
+      "timestamp": "2024-12-26T16:56:00.7048320Z",
+      "amount_deposited": 1663
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-27T00:23:43.7459660Z",
+      "amount_deposited": 25700
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-27T00:23:45.1758050Z",
+      "amount_deposited": 510
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-27T01:07:42.4200790Z",
+      "amount_deposited": 19252
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-27T01:07:42.6694550Z",
+      "amount_deposited": 184565
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T03:38:23.4079450Z",
+      "amount_deposited": 23660
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T03:38:24.0900300Z",
+      "amount_deposited": 10
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T05:18:17.8255680Z",
+      "amount_deposited": 2498
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T05:18:18.5267370Z",
+      "amount_deposited": 1645
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T06:25:46.1073690Z",
+      "amount_deposited": 610
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-27T06:25:46.5432060Z",
+      "amount_deposited": 2009
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-27T06:55:14.0030410Z",
+      "amount_deposited": 6410
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-27T06:55:15.1894060Z",
+      "amount_deposited": 55660
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-27T12:59:58.5800880Z",
+      "amount_deposited": 33590
+    },
+    {
+      "steamid": "76561198359025798",
+      "timestamp": "2024-12-27T14:02:34.7523850Z",
+      "amount_deposited": 110372
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-27T17:30:48.1459670Z",
+      "amount_deposited": 12150
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-27T21:04:18.9486490Z",
+      "amount_deposited": 2100
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T00:38:29.5230300Z",
+      "amount_deposited": 99765
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T00:38:30.2517810Z",
+      "amount_deposited": 6013
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-28T01:27:11.6230320Z",
+      "amount_deposited": 19669
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-28T01:27:12.8126280Z",
+      "amount_deposited": 238220
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-28T02:22:38.1738060Z",
+      "amount_deposited": 23160
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-28T02:22:38.6562170Z",
+      "amount_deposited": 5
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-28T03:44:29.3087390Z",
+      "amount_deposited": 4043
+    },
+    {
+      "steamid": "76561198173611098",
+      "timestamp": "2024-12-28T03:44:29.8098670Z",
+      "amount_deposited": 1565
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-28T04:03:02.6998770Z",
+      "amount_deposited": 11579
+    },
+    {
+      "steamid": "76561198977679718",
+      "timestamp": "2024-12-28T04:19:40.4071630Z",
+      "amount_deposited": 43935
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-28T05:05:47.0791120Z",
+      "amount_deposited": 14325
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-28T13:48:27.2341800Z",
+      "amount_deposited": 7065
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T16:40:17.7006790Z",
+      "amount_deposited": 126075
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T16:40:28.2089520Z",
+      "amount_deposited": 26323
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T17:10:09.5185920Z",
+      "amount_deposited": 15642
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T17:10:16.4396270Z",
+      "amount_deposited": 4961
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T17:29:00.2230560Z",
+      "amount_deposited": 8529
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T17:36:28.8134770Z",
+      "amount_deposited": 5210
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-28T17:39:43.9933250Z",
+      "amount_deposited": 46666
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-28T17:39:44.3176410Z",
+      "amount_deposited": 6083
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T17:43:33.3717760Z",
+      "amount_deposited": 1627
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-28T19:47:16.7562970Z",
+      "amount_deposited": 9130
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T20:38:06.4765360Z",
+      "amount_deposited": 46745
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-28T20:38:06.7241860Z",
+      "amount_deposited": 2498
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-28T22:39:33.3908970Z",
+      "amount_deposited": 189200
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-28T22:39:35.0947440Z",
+      "amount_deposited": 15413
+    },
+    {
+      "steamid": "76561198270939431",
+      "timestamp": "2024-12-29T01:04:14.0539260Z",
+      "amount_deposited": 26277
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-29T01:30:36.2004300Z",
+      "amount_deposited": 49300
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-29T11:29:24.7442580Z",
+      "amount_deposited": 2605
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-29T11:29:25.6840780Z",
+      "amount_deposited": 8725
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-29T15:46:09.7863730Z",
+      "amount_deposited": 3870
+    },
+    {
+      "steamid": "76561198019673819",
+      "timestamp": "2024-12-29T16:11:54.7968440Z",
+      "amount_deposited": 748105
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-29T17:53:24.9249830Z",
+      "amount_deposited": 486
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-29T20:47:51.3975740Z",
+      "amount_deposited": 9497
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-29T20:48:45.4598810Z",
+      "amount_deposited": 47905
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-29T21:14:02.4607650Z",
+      "amount_deposited": 25300
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-29T21:14:02.6696670Z",
+      "amount_deposited": 773985
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-29T21:33:22.1261740Z",
+      "amount_deposited": 628
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-29T21:33:22.3865420Z",
+      "amount_deposited": 5220
+    },
+    {
+      "steamid": "76561197961460953",
+      "timestamp": "2024-12-29T21:39:24.0011640Z",
+      "amount_deposited": 1851
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-29T22:17:19.7877810Z",
+      "amount_deposited": 161760
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-29T22:17:21.5423790Z",
+      "amount_deposited": 20467
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-29T22:39:48.3719370Z",
+      "amount_deposited": 13550
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-29T22:39:49.0859560Z",
+      "amount_deposited": 156
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-29T22:50:42.9613310Z",
+      "amount_deposited": 14990
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-29T22:50:44.5581400Z",
+      "amount_deposited": 3988
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-29T23:09:53.6473340Z",
+      "amount_deposited": 830
+    },
+    {
+      "steamid": "76561198343722197",
+      "timestamp": "2024-12-29T23:20:44.6886330Z",
+      "amount_deposited": 92795
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-30T00:03:20.8525540Z",
+      "amount_deposited": 1164
+    },
+    {
+      "steamid": "76561197988870899",
+      "timestamp": "2024-12-30T00:08:21.3068960Z",
+      "amount_deposited": 12410
+    },
+    {
+      "steamid": "76561198117391735",
+      "timestamp": "2024-12-30T00:12:16.1199390Z",
+      "amount_deposited": 2244
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-30T01:21:08.3201580Z",
+      "amount_deposited": 287
+    },
+    {
+      "steamid": "76561199570511283",
+      "timestamp": "2024-12-30T01:21:09.7536800Z",
+      "amount_deposited": 11760
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-30T04:06:40.6526370Z",
+      "amount_deposited": 255
+    },
+    {
+      "steamid": "76561198124363571",
+      "timestamp": "2024-12-30T04:06:42.3529570Z",
+      "amount_deposited": 4036
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-30T11:58:22.1750130Z",
+      "amount_deposited": 1467
+    },
+    {
+      "steamid": "76561198091807713",
+      "timestamp": "2024-12-30T11:58:27.0636260Z",
+      "amount_deposited": 44015
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2025-01-02T19:10:12.9535960Z",
+      "amount_deposited": 10085
+    },
+    {
+      "steamid": "76561198998863046",
+      "timestamp": "2025-01-02T19:10:13.6677690Z",
+      "amount_deposited": 66
+    }
+  ]
+}

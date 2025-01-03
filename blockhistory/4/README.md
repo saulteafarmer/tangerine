@@ -1,16 +1,14 @@
-## Block 3 - Overview
+## Block 4 - Overview
 
 ### Key Features
 - **Bitcoin Rewards**: Players can earn Bitcoin rewards by turning scrap into the deposit boxes located at Outpost or Bandit Camp
-- **Custom Raidable Bases**: Raidable bases are present with special loot, providing new raid challenges for players.
-- **Convoy**: A group of outsiders are leading a convoy through the map. Stop them and steal their loot for a chance at big rewards!
-- **Sputnik**: Satellite fragments will crash-land across the map, guarded by helicopters, NPCs, and turrets. Players must use Space Cards to access high-value loot.
-- **Mine a Scrap-o-hash**: Find mining components and cooling equipment to mine Scrap in your base
+- **War Mode**: Experience the flexibility of our War Mode, where PvE and PvP players coexist seamlessly. Choose your preferred playstyle, toggle modes with a command, and explore zones with enforced gameplay modes for added variety.
+- **Mine Scrap**: Find mining components and cooling equipment to mine Scrap in your base
 - **Battlepass**: We've introduced a new Battlepass function that will let you complete daily tasks to earn Tangerine points to spend on new mining equipment!
 
 ### Server Environment Variables
 - **Map Size**: 4500, procedurally generated.
-- **Map Seed**: 1069026693.
+- **Map Seed**: 1294480923.
 - **PVP Server**: Base protection is enabled, with specific rules outlined below.
 - **Team Limits**: Maximum of 8 players per team.
 - **Tool Cupboard (TC) Limit**: 3 TCs per player.
@@ -20,27 +18,36 @@
 - **Crafting Speed**: Vanilla.
 - **Decay Rate**: Vanilla.
 
-### Base Protection
-- **Base Protection**: 100% base protection will last until the last weekend of Block 3.
-- **Twig Structures**: Not protected—upgrade to wood or higher for protection.
-- **Raid Week**: Raid week will start on the last Monday of the wipe and run until the end of the wipe. 
+### War Mode Details
+
+- **Dynamic Gameplay**: Players can choose between PvE and PvP modes, ensuring everyone has an experience tailored to their preferences.
+- **Customizable Protections**: PvE players enjoy specific protections and restrictions to maintain a balanced gameplay environment. Going PvP removes these protections and leaves your base raidable!
+- **Zone-Specific Modes**: Certain areas, such as monuments or custom zones, enforce PvP mode.
+- **Toggle On-Demand**: Players can use the /flag command to switch between PvE and PvP modes, when they are in safe zones.
+- **Team Dynamics**: Be cautious when forming teams. If one teammate switches to PvP mode, the entire team is automatically placed into PvP mode as well. Coordination and trust are key to maintaining your preferred playstyle.
+
+### Server Events
+- **Custom Raidable Bases**: Raidable bases are present with special loot, providing new raid challenges for players.
+- **Convoy**: A group of outsiders are leading a convoy through the map. Stop them and steal their loot for a chance at big rewards!
+- **Sputnik**: Satellite fragments will crash-land across the map, guarded by helicopters, NPCs, and turrets. Players must use Space Cards to access high-value loot.
+- **Dungeon Bases**: Dungeons are bases with puzzles, NPC defenders, turrets and more all one portal away.
 
 ### Mining and Rewards
 - **Satoshi Reward Pool**: Players will compete for a total of 100,000 Satoshis in rewards, generously provided by Orangemart, our main sponsor for this wipe.
-- **Bitcoin Miner**: Utilize your own /bitcoin miner to generate hash to turn in throughout the wipe.
-- **Scrap-o-Hash**: Hash can be generated via mining rigs or earned from various in-game events.
-- **Bitcoin Rewards**: Earn Bitcoin by turning in Scrap at one of the Deposit Centers. The more hash you submit, the greater your share of the prize pool.
+- **Scrap Mining**: Scrap can be generated via mining rigs or earned from various in-game events.
+- **Bitcoin Rewards**: Earn Bitcoin by turning in Scrap at one of the Deposit Centers. The more scrap you submit, the greater your share of the prize pool.
 
 ### Wipe Schedule
-- **Map Wipe**: The map will wipe on the first Thursday of every month, with the next wipe scheduled for Thursday, January 2nd, 2025.
-- **Blueprint Wipe**: Blueprints wipe alongside the map, the next blueprint wipe is also scheduled for Thursday, January 2nd, 2025.
+- **Map Wipe**: The map will wipe on the first Thursday of every month, with the next wipe scheduled for Thursday, February 6th, 2025.
+- **Blueprint Wipe**: Blueprints wipe alongside the map, the next blueprint wipe is also scheduled for Thursday, February 6th, 2025.
 
-## Changelog for Block 3
-- **12/05/2024**: Block 3 begins.
-- **01/02/2024**: Block 3 ends.
+## Changelog for Block 4
+- **01/02/2025**: Block 4 begins.
+- **02/02/2025**: Block 4 Scrap Deposits Close
+- **02/06/2025**: Block 4 ends.
 
 ## Logs and Additional Information
-- [Hash Deposits Log](./depositboxlog.json)
+- [Scrap Deposit Logs](./depositboxlog.json)
 - [Claim Rewards](./ClaimPlayerRewards.json)
 
 ## Plugins Used in Block 3
@@ -60,7 +67,7 @@
 - **CupboardLimiters.cs**: Limits the number of TCs a player can place.
 - **CustomVendingSetup.cs**: Customizes vending machines for in-game services.
 - **DefaultRadioStation.cs**: Sets up default radio stations for players.
-- **DepositBox.cs**: Manages hash deposits for rewards.
+- **DepositBox.cs**: Manages scrap deposits for rewards.
 - **DiscordAuth.cs**: Connects in-game profiles with Discord.
 - **DiscordChat.cs**: Allows players to chat between discord and the game server.
 - **DiscordCore.cs**: Creates a link between a player and a Discord server.

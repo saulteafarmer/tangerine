@@ -1,18 +1,22 @@
 
 # Tangerine Rust Server
 
-**Welcome to Tangerine**, a unique Rust server that blends PvE-focused gameplay with Bitcoin education. By seamlessly integrating Bitcoin concepts into the Rust mechanics, Tangerine offers players a hands-on approach to understanding Bitcoin while engaging in a competitive and survival-oriented environment.The server strikes a balance between education and entertainment, making complex Bitcoin concepts accessible and engaging.
+**Welcome to Tangerine**, a unique Rust server that offers an innovative blend of PvE and PvP gameplay through its dynamic War Mode. This system allows players to tailor their experience by choosing between cooperative survival or competitive combat, creating a versatile and engaging environment. Alongside this, Tangerine integrates Bitcoin mechanics into Rust, offering players a hands-on approach to understanding Bitcoin while thriving in a competitive survival world. The server strikes a balance between education, entertainment, and dynamic interactions.
 
 ## 🌟 Key Features
 
-### 🛡️ PvE Focus
-- **Roam Freely**: Gather resources and explore the map without constant PvP threats. PvP zones are restricted to monuments, where higher-end rewards await.
-- **Raid Restriction**: Player bases are protected from other player damage once upgraded to Wood or higher. Raid Protection will end after the last weekend of the wipe.
+### 🛡️ War Mode: PvE and PvP Coexistence
+- **Dynamic Gameplay**: Players can choose between PvE and PvP modes, ensuring everyone has an experience tailored to their preferences.
+- **Customizable Protections**: PvE players enjoy specific protections and restrictions to maintain a balanced gameplay environment.
+- **Zone-Specific Modes**: Certain areas, such as monuments or events, enforce PvP mode for you and your base
+- **Toggle On-Demand**: Players can use the /flag command to switch between PvE and PvP modes when they are in the safety of a safezone.
+- **Choose Teammates Wisely**: Be cautious when forming teams. If one teammate switches to PvP mode, the entire team is automatically placed into PvP mode as well. Coordination and trust are key to maintaining your preferred playstyle.
 
 ### 🛠️ Bitcoin Mining
-- **Generate Hash**: Deploy your own Bitcoin mining rig and upgrade your PSU and hashboards to generate hash. Maximize your in-game earnings!
-- **Redeem Your Hash**: Visit the community center at Outpost or Bandit Camp turn your mined hash in to be counted
-- **Real Bitcoin Rewards**: Players compete to earn each block's reward. Each SteamID's share of the total hash turned in determines the Blood they can claim in the next block.
+- **Scrap Mining**: Authorized players who deploy an in-game computer station will find it functions as a scrap miner.
+- **Start Mining**: To begin, provide the computer station with 10 units of power and sit down to enable mining. Monitor your rig's temperature carefully—if it overheats, it will explode! You can turn it off or remove power to prevent further heating.
+- **Upgrade Your Rig**: Players can find various mining equipment across the map to enhance their rigs. These upgrades include increasing mining speed or improving cooling systems. Higher-tier equipment can be found in events and raidable bases.
+- **Scrap for Bitcoin**: Players now trade in scrap to earn Bitcoin. Bring your scrap to Outpost or Bandit Camp to turn it in, just like with paper or hash in the past.
 
 ### 🩸 Blood = Satoshis
 
@@ -22,13 +26,13 @@ Blood is the primary asset on Tangerine and acts as a transferable in-game curre
   - **/sendblood**: Convert blood back to Bitcoin by trading it with `/sendblood`, which transfers blood to sats directly.
 
 ### 🏆 Competitive Events
-- **Sputnik**: Timed events where players compete against attack choppers, NPCs and each other to gather resources from fallen space fragments. Completing Sputnik can reward up to a full day’s worth of mining resources.
-- **Convoy Reforged**: A traveling convoy arrives to turn in their hash and purchase resources for their miners. Convoys come in different levels, with some lightly guarded and others more heavily protected than a fallen Sputnik.
-- **Raidable Bases**: Participate in Raidable Bases events to engage in PvP action and capture stored hash and resources!
+- **Sputnik**: Timed events where players compete against attack choppers, NPCs and each other to gather resources from fallen space fragments. Completing Sputnik can reward a worthwhile set of mining loot.
+- **Convoy Reforged**: A traveling convoy arrives to turn in their scrap and purchase resources for their miners. Convoys come in different levels, with some lightly guarded and others more heavily protected than a fallen Sputnik.
+- **Raidable Bases**: Participate in Raidable Bases events to engage in PvP action and capture stored scrap and resources!
 
 ## 📢 Why Choose Tangerine?
 
-- **PvE-Oriented with PvP Zones**: Enjoy survival-focused gameplay without constant player threats, while still having dedicated PvP zones for risk and reward.
+- **Choose Your Adventure**: Experience dynamic gameplay with War Mode, allowing PvE and PvP players to coexist seamlessly.
 - **Bitcoin Rewards**: Earn sats through in-game activities and engage with a Bitcoin-based economy.
 - **Unique Events**: Participate in Raidable Bases, Sputnik and Convoy Reforged for opportunities to earn mining resources and valuable rewards.
 - **Community-Driven**: Join a welcoming community that prioritizes both education and fun.
@@ -63,4 +67,4 @@ Ready to explore a Rust server where PvE and Bitcoin education meet? Whether you
 
 **🚀 Server Address**:
 
-```connect tangerine.orangem.art```
+```client.connect tangerine.orangem.art```
