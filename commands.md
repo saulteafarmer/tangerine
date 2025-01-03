@@ -4,15 +4,21 @@
 
 **/info** - Reopen the server's informational page.
 
+**/flag** - Allows players to change between PVE and PVP modes (can only be called in safezone.)
+
 **/claim** - Claim any blood you've earned from the past wipe (block).
+
+**/checkdeposits** - Check your current % of total scrap turn ins.
+
+**/sendblood** - Allows players to convert blood into Bitcoin lightning payments
+
+**/buyblood** - Allows players to generate a lightning invoice to purchase Blood.
 
 **/rb** - Check the status of Raidable Bases events.
 
 **/remove** - Enter the Remover Tool to remove walls from your base for a fee.
 
 **/sb** - Open the Skinbox UI to skin your items.
-
-**/totalhash** - Display the total amount of hash found on the server.
 
 **/rb ladder** - Check the progression of points for finishing Raidable Bases.
 
@@ -27,3 +33,5 @@
 **/sili** - Add the currently held item’s icon to a sign or frame. Use /sili default to add that item’s default skin. Note that unapproved workshop skins will upload the first image in the workshop preview.
 
 **/deauth** - Deauthenticates the player from Discord authentication.
+
+**/goodmorningbitcoin - Allows players to check what's currently playing on GoodMorningBitcoin.com

@@ -29,6 +29,7 @@ Blood is the primary asset on Tangerine and acts as a transferable in-game curre
 - **Sputnik**: Timed events where players compete against attack choppers, NPCs and each other to gather resources from fallen space fragments. Completing Sputnik can reward a worthwhile set of mining loot.
 - **Convoy Reforged**: A traveling convoy arrives to turn in their scrap and purchase resources for their miners. Convoys come in different levels, with some lightly guarded and others more heavily protected than a fallen Sputnik.
 - **Raidable Bases**: Participate in Raidable Bases events to engage in PvP action and capture stored scrap and resources!
+- **Dungeon Bases**: Dungeons are bases with puzzles, NPC defenders, turrets and more all one portal away.
 
 ## 📢 Why Choose Tangerine?
 

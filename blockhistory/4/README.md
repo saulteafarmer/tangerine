@@ -50,7 +50,7 @@
 - [Scrap Deposit Logs](./depositboxlog.json)
 - [Claim Rewards](./ClaimPlayerRewards.json)
 
-## Plugins Used in Block 3
+## Plugins Used in Block 4
 - **AdminPanel.cs**: Provides an in-game admin panel for managing the server.
 - **AdminRadar.cs**: Tracks players and items for admin use.
 - **AlphaLoot.cs**: Modifies loot tables and spawn rates.
@@ -73,7 +73,8 @@
 - **DiscordCore.cs**: Creates a link between a player and a Discord server.
 - **DiscordLogger.cs**: Logs events to Discord channels using webhooks.
 - **DiscordMessages.cs**: Sends report and ban messages straight to Discord.
-- **Discord Presendce**: Shows server status in Discord.
+- **Discord Presence**: Shows server status in Discord.
+- **DungeonBases.cs**: Dungeons are bases with puzzles, NPC defenders, turrets and more. 
 - **DynamicPVP.cs**: Handles our dynamicPVP zones at monuments.
 - **GoodMorningBitcoin.cs**: Displays 'Now Playing' information for GoodMorningBitcoin.com.
 - **ImageLibrary.cs**: Renders custom user interfaces for plugins.
@@ -96,9 +97,13 @@
 - **SkinBox.cs**: Provides access to item skins.
 - **Sputnik.cs**: Enables the Sputnik event.
 - **StackModifer.cs**: Enables editing of stack sizes.
-- **TruePVE.cs**: Enables PvE environment on server.
+- **TwigDecay.cs**: Forces twig to decay regardless if a TC has wood in it.
 - **UpdateChecker.cs**: Checks for plugin updates automatically.
 - **Vanish.cs**: Allows admins to become invisible to players.
 - **VendingMachineLogs.cs**: Logs vending machine transactions.
+- **WarMode.cs**: Enables PvE/PVP split environment on server.
+- **WarModeAdminPanel.cs**: Allows admins to update mode rules
+- **WarModeBadges.cs**: Customizable UI elements that display PVE/PVP
+- **WarModeRulesUI.cs**: Allows players to see what restrictions they have for their mode
+- **WarModeSpawnUI.cs**: First spawn prompt for users to choose if they want to be PVP or PVE
 - **ZoneManager.cs**: Manages safe and PvP zones on the map.
-- **Zone PVx Info**: Shows a HUD on PvE/PvP name defined zones
